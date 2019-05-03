@@ -24,4 +24,4 @@
 - Game of Thrones: https://github.com/mathbeveridge/gameofthrones/
 - lawyers: https://www.stats.ox.ac.uk/~snijders/siena/Lazega_lawyers_data.htm
 - media: http://www.kateto.net/wordpress/wp-content/uploads/2016/01/netscix2016.zip
-
+- Marvel Universe: http://syntagmatic.github.io/exposedata/marvel/

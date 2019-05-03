@@ -1,0 +1,2842 @@
+/* Created by igraph 1.2.4 */
+graph {
+  graph [
+    title="Season 1"
+  ];
+  0 [
+    name=Ned
+    clu=1
+    size=57
+  ];
+  1 [
+    name=Daenerys
+    clu=5
+    size=18
+  ];
+  2 [
+    name=Jon
+    clu=3
+    size=26
+  ];
+  3 [
+    name=Littlefinger
+    clu=1
+    size=26
+  ];
+  4 [
+    name=Arya
+    clu=1
+    size=28
+  ];
+  5 [
+    name=Catelyn
+    clu=4
+    size=37
+  ];
+  6 [
+    name=Bronn
+    clu=4
+    size=12
+  ];
+  7 [
+    name=Cersei
+    clu=1
+    size=29
+  ];
+  8 [
+    name=Shae
+    clu=4
+    size=3
+  ];
+  9 [
+    name=Joffrey
+    clu=1
+    size=27
+  ];
+  10 [
+    name=Sansa
+    clu=1
+    size=26
+  ];
+  11 [
+    name=Tyrion
+    clu=4
+    size=41
+  ];
+  12 [
+    name=Jeor
+    clu=3
+    size=16
+  ];
+  13 [
+    name=Robb
+    clu=2
+    size=30
+  ];
+  14 [
+    name=Bran
+    clu=2
+    size=20
+  ];
+  15 [
+    name=Jaime
+    clu=1
+    size=24
+  ];
+  16 [
+    name=Loras
+    clu=1
+    size=8
+  ];
+  17 [
+    name="Jory Cassel"
+    clu=1
+    size=8
+  ];
+  18 [
+    name=Jorah
+    clu=5
+    size=15
+  ];
+  19 [
+    name=Ros
+    clu=1
+    size=9
+  ];
+  20 [
+    name=Grenn
+    clu=3
+    size=8
+  ];
+  21 [
+    name=Benjen
+    clu=3
+    size=9
+  ];
+  22 [
+    name="Greatjon Umber"
+    clu=2
+    size=12
+  ];
+  23 [
+    name=Mord
+    clu=4
+    size=7
+  ];
+  24 [
+    name=Doreah
+    clu=5
+    size=8
+  ];
+  25 [
+    name=Lysa
+    clu=4
+    size=7
+  ];
+  26 [
+    name=Pyp
+    clu=3
+    size=16
+  ];
+  27 [
+    name=Renly
+    clu=1
+    size=17
+  ];
+  28 [
+    name=Drogo
+    clu=5
+    size=13
+  ];
+  29 [
+    name=Barristan
+    clu=1
+    size=11
+  ];
+  30 [
+    name=Illyrio
+    clu=5
+    size=6
+  ];
+  31 [
+    name=Osha
+    clu=2
+    size=6
+  ];
+  32 [
+    name=Shagga
+    clu=4
+    size=4
+  ];
+  33 [
+    name="Alliser Thorne"
+    clu=3
+    size=8
+  ];
+  34 [
+    name=Hound
+    clu=1
+    size=18
+  ];
+  35 [
+    name=Theon
+    clu=2
+    size=19
+  ];
+  36 [
+    name="Maester Luwin"
+    clu=2
+    size=10
+  ];
+  37 [
+    name=Robert
+    clu=1
+    size=36
+  ];
+  38 [
+    name=Lancel
+    clu=1
+    size=5
+  ];
+  39 [
+    name="Mirri Maz Duur"
+    clu=5
+    size=5
+  ];
+  40 [
+    name=Pycelle
+    clu=1
+    size=16
+  ];
+  41 [
+    name=Kevan
+    clu=4
+    size=7
+  ];
+  42 [
+    name="Janos Slynt"
+    clu=1
+    size=5
+  ];
+  43 [
+    name=Gendry
+    clu=1
+    size=6
+  ];
+  44 [
+    name="Hot Pie"
+    clu=1
+    size=3
+  ];
+  45 [
+    name="Jon Arryn"
+    clu=1
+    size=11
+  ];
+  46 [
+    name=Irri
+    clu=5
+    size=7
+  ];
+  47 [
+    name="Meryn Trant"
+    clu=1
+    size=9
+  ];
+  48 [
+    name=Mhaegen
+    clu=1
+    size=3
+  ];
+  49 [
+    name="Robin Arryn"
+    clu=4
+    size=7
+  ];
+  50 [
+    name="Rodrik Cassel"
+    clu=4
+    size=13
+  ];
+  51 [
+    name=Aerys
+    clu=1
+    size=13
+  ];
+  52 [
+    name=Baelor
+    clu=1
+    size=9
+  ];
+  53 [
+    name=Dareon
+    clu=3
+    size=10
+  ];
+  54 [
+    name="Ser Vardis"
+    clu=4
+    size=6
+  ];
+  55 [
+    name="Hugh Of The Vale"
+    clu=1
+    size=6
+  ];
+  56 [
+    name="Maester Aemon"
+    clu=3
+    size=9
+  ];
+  57 [
+    name="Othell Yarwyck"
+    clu=3
+    size=6
+  ];
+  58 [
+    name=Rast
+    clu=3
+    size=7
+  ];
+  59 [
+    name=Gared
+    clu=2
+    size=2
+  ];
+  60 [
+    name="Jonos Bracken"
+    clu=2
+    size=2
+  ];
+  61 [
+    name=Marillion
+    clu=4
+    size=7
+  ];
+  62 [
+    name="Masha Heddle"
+    clu=4
+    size=2
+  ];
+  63 [
+    name=Mountain
+    clu=1
+    size=7
+  ];
+  64 [
+    name="Ilyn Payne"
+    clu=1
+    size=10
+  ];
+  65 [
+    name=Lyanna
+    clu=1
+    size=3
+  ];
+  66 [
+    name=Mycah
+    clu=1
+    size=4
+  ];
+  67 [
+    name="Old Nan"
+    clu=2
+    size=3
+  ];
+  68 [
+    name=Royce
+    clu=2
+    size=2
+  ];
+  69 [
+    name="Ryger Rivers"
+    clu=2
+    size=1
+  ];
+  70 [
+    name="Stevron Frey"
+    clu=2
+    size=2
+  ];
+  71 [
+    name="Waymar Royce"
+    clu=2
+    size=1
+  ];
+  72 [
+    name="Addam Marbrand"
+    clu=4
+    size=3
+  ];
+  73 [
+    name=Assassin
+    clu=2
+    size=3
+  ];
+  74 [
+    name=Balon
+    clu=2
+    size=2
+  ];
+  75 [
+    name=Beric
+    clu=1
+    size=2
+  ];
+  76 [
+    name="Brandon Stark"
+    clu=1
+    size=5
+  ];
+  77 [
+    name=Cohollo
+    clu=5
+    size=1
+  ];
+  78 [
+    name=Hodor
+    clu=2
+    size=5
+  ];
+  79 [
+    name=Hoster
+    clu=2
+    size=2
+  ];
+  80 [
+    name=Myrcella
+    clu=4
+    size=1
+  ];
+  81 [
+    name=Qotho
+    clu=5
+    size=5
+  ];
+  82 [
+    name=Rakharo
+    clu=5
+    size=8
+  ];
+  83 [
+    name=Rickon
+    clu=2
+    size=3
+  ];
+  84 [
+    name=Varys
+    clu=1
+    size=21
+  ];
+  85 [
+    name=Aegon
+    clu=3
+    size=2
+  ];
+  86 [
+    name=Borcas
+    clu=3
+    size=2
+  ];
+  87 [
+    name="Bowen Marsh"
+    clu=3
+    size=2
+  ];
+  88 [
+    name="Galbart Glover"
+    clu=2
+    size=3
+  ];
+  89 [
+    name="High Septon"
+    clu=1
+    size=1
+  ];
+  90 [
+    name="Jaremy Rykker"
+    clu=3
+    size=3
+  ];
+  91 [
+    name=Joanna
+    clu=4
+    size=1
+  ];
+  92 [
+    name=Joyeuse
+    clu=2
+    size=1
+  ];
+  93 [
+    name="Leo Lefford"
+    clu=4
+    size=3
+  ];
+  94 [
+    name=Luke
+    clu=3
+    size=2
+  ];
+  95 [
+    name=Melessa
+    clu=3
+    size=1
+  ];
+  96 [
+    name=Othor
+    clu=3
+    size=4
+  ];
+  97 [
+    name=Randyll
+    clu=3
+    size=1
+  ];
+  98 [
+    name=Rhaegar
+    clu=1
+    size=2
+  ];
+  99 [
+    name=Rhaego
+    clu=5
+    size=4
+  ];
+  100 [
+    name="Rickard Karstark"
+    clu=2
+    size=3
+  ];
+  101 [
+    name=Stannis
+    clu=1
+    size=9
+  ];
+  102 [
+    name=Sam
+    clu=3
+    size=12
+  ];
+  103 [
+    name=Viserys
+    clu=5
+    size=9
+  ];
+  104 [
+    name="Septa Mordane"
+    clu=1
+    size=6
+  ];
+  105 [
+    name=Tywin
+    clu=4
+    size=17
+  ];
+  106 [
+    name="Syrio Forel"
+    clu=1
+    size=3
+  ];
+  107 [
+    name=Walder
+    clu=2
+    size=8
+  ];
+  108 [
+    name=Yoren
+    clu=1
+    size=16
+  ];
+  109 [
+    name="Wine Merchant"
+    clu=5
+    size=4
+  ];
+  110 [
+    name="Lommy Greenhands"
+    clu=1
+    size=2
+  ];
+  111 [
+    name="Vardis Egen"
+    clu=4
+    size=1
+  ];
+  112 [
+    name=Mago
+    clu=5
+    size=2
+  ];
+  113 [
+    name="Tobho Mott"
+    clu=1
+    size=2
+  ];
+  114 [
+    name="Stable Boy"
+    clu=1
+    size=1
+  ];
+  115 [
+    name=Tomard
+    clu=1
+    size=3
+  ];
+  116 [
+    name="Rickard Stark"
+    clu=1
+    size=4
+  ];
+  117 [
+    name=Will
+    clu=2
+    size=8
+  ];
+  118 [
+    name=Jhiqui
+    clu=5
+    size=3
+  ];
+  119 [
+    name=Irogenia
+    clu=5
+    size=1
+  ];
+  120 [
+    name=Tysha
+    clu=4
+    size=2
+  ];
+  121 [
+    name=Tommen
+    clu=1
+    size=2
+  ];
+  122 [
+    name="Little Bird"
+    clu=5
+    size=1
+  ];
+  123 [
+    name=Mace
+    clu=1
+    size=1
+  ];
+  124 [
+    name="Roose Bolton"
+    clu=1
+    size=1
+  ];
+  125 [
+    name=Steffon
+    clu=1
+    size=1
+  ];
+  126 [
+    name=Varly
+    clu=1
+    size=1
+  ];
+
+  37 -- 0 [
+    Weight=192
+    Season=1
+  ];
+  18 -- 1 [
+    Weight=154
+    Season=1
+  ];
+  102 -- 2 [
+    Weight=121
+    Season=1
+  ];
+  3 -- 0 [
+    Weight=107
+    Season=1
+  ];
+  84 -- 0 [
+    Weight=96
+    Season=1
+  ];
+  28 -- 1 [
+    Weight=91
+    Season=1
+  ];
+  4 -- 0 [
+    Weight=90
+    Season=1
+  ];
+  13 -- 5 [
+    Weight=90
+    Season=1
+  ];
+  11 -- 6 [
+    Weight=86
+    Season=1
+  ];
+  7 -- 0 [
+    Weight=86
+    Season=1
+  ];
+  37 -- 7 [
+    Weight=80
+    Season=1
+  ];
+  84 -- 3 [
+    Weight=73
+    Season=1
+  ];
+  11 -- 8 [
+    Weight=73
+    Season=1
+  ];
+  5 -- 0 [
+    Weight=69
+    Season=1
+  ];
+  10 -- 9 [
+    Weight=69
+    Season=1
+  ];
+  40 -- 0 [
+    Weight=68
+    Season=1
+  ];
+  103 -- 1 [
+    Weight=66
+    Season=1
+  ];
+  104 -- 10 [
+    Weight=64
+    Season=1
+  ];
+  105 -- 11 [
+    Weight=61
+    Season=1
+  ];
+  12 -- 2 [
+    Weight=60
+    Season=1
+  ];
+  35 -- 13 [
+    Weight=60
+    Season=1
+  ];
+  9 -- 7 [
+    Weight=54
+    Season=1
+  ];
+  10 -- 4 [
+    Weight=53
+    Season=1
+  ];
+  36 -- 14 [
+    Weight=53
+    Season=1
+  ];
+  15 -- 0 [
+    Weight=53
+    Season=1
+  ];
+  10 -- 0 [
+    Weight=49
+    Season=1
+  ];
+  14 -- 13 [
+    Weight=48
+    Season=1
+  ];
+  27 -- 16 [
+    Weight=47
+    Season=1
+  ];
+  15 -- 7 [
+    Weight=46
+    Season=1
+  ];
+  39 -- 1 [
+    Weight=45
+    Season=1
+  ];
+  11 -- 2 [
+    Weight=45
+    Season=1
+  ];
+  106 -- 4 [
+    Weight=44
+    Season=1
+  ];
+  17 -- 0 [
+    Weight=44
+    Season=1
+  ];
+  103 -- 18 [
+    Weight=43
+    Season=1
+  ];
+  26 -- 2 [
+    Weight=42
+    Season=1
+  ];
+  11 -- 5 [
+    Weight=41
+    Season=1
+  ];
+  35 -- 19 [
+    Weight=40
+    Season=1
+  ];
+  9 -- 0 [
+    Weight=39
+    Season=1
+  ];
+  10 -- 7 [
+    Weight=36
+    Season=1
+  ];
+  26 -- 20 [
+    Weight=36
+    Season=1
+  ];
+  107 -- 5 [
+    Weight=34
+    Season=1
+  ];
+  24 -- 1 [
+    Weight=34
+    Season=1
+  ];
+  15 -- 11 [
+    Weight=34
+    Season=1
+  ];
+  105 -- 15 [
+    Weight=34
+    Season=1
+  ];
+  21 -- 2 [
+    Weight=33
+    Season=1
+  ];
+  46 -- 1 [
+    Weight=32
+    Season=1
+  ];
+  22 -- 13 [
+    Weight=31
+    Season=1
+  ];
+  23 -- 11 [
+    Weight=31
+    Season=1
+  ];
+  25 -- 5 [
+    Weight=30
+    Season=1
+  ];
+  103 -- 24 [
+    Weight=30
+    Season=1
+  ];
+  82 -- 18 [
+    Weight=30
+    Season=1
+  ];
+  49 -- 25 [
+    Weight=30
+    Season=1
+  ];
+  25 -- 11 [
+    Weight=30
+    Season=1
+  ];
+  27 -- 0 [
+    Weight=30
+    Season=1
+  ];
+  102 -- 26 [
+    Weight=30
+    Season=1
+  ];
+  37 -- 27 [
+    Weight=30
+    Season=1
+  ];
+  14 -- 0 [
+    Weight=29
+    Season=1
+  ];
+  31 -- 14 [
+    Weight=29
+    Season=1
+  ];
+  2 -- 0 [
+    Weight=29
+    Season=1
+  ];
+  14 -- 5 [
+    Weight=28
+    Season=1
+  ];
+  15 -- 5 [
+    Weight=28
+    Season=1
+  ];
+  50 -- 5 [
+    Weight=28
+    Season=1
+  ];
+  81 -- 1 [
+    Weight=28
+    Season=1
+  ];
+  37 -- 9 [
+    Weight=28
+    Season=1
+  ];
+  56 -- 2 [
+    Weight=28
+    Season=1
+  ];
+  103 -- 28 [
+    Weight=27
+    Season=1
+  ];
+  17 -- 15 [
+    Weight=27
+    Season=1
+  ];
+  35 -- 14 [
+    Weight=26
+    Season=1
+  ];
+  5 -- 3 [
+    Weight=26
+    Season=1
+  ];
+  36 -- 5 [
+    Weight=26
+    Season=1
+  ];
+  29 -- 0 [
+    Weight=25
+    Season=1
+  ];
+  103 -- 30 [
+    Weight=25
+    Season=1
+  ];
+  13 -- 2 [
+    Weight=25
+    Season=1
+  ];
+  35 -- 31 [
+    Weight=25
+    Season=1
+  ];
+  9 -- 4 [
+    Weight=24
+    Season=1
+  ];
+  20 -- 2 [
+    Weight=24
+    Season=1
+  ];
+  13 -- 0 [
+    Weight=23
+    Season=1
+  ];
+  37 -- 29 [
+    Weight=22
+    Season=1
+  ];
+  7 -- 5 [
+    Weight=22
+    Season=1
+  ];
+  10 -- 3 [
+    Weight=22
+    Season=1
+  ];
+  32 -- 11 [
+    Weight=22
+    Season=1
+  ];
+  108 -- 11 [
+    Weight=22
+    Season=1
+  ];
+  33 -- 2 [
+    Weight=20
+    Season=1
+  ];
+  4 -- 2 [
+    Weight=20
+    Season=1
+  ];
+  28 -- 18 [
+    Weight=20
+    Season=1
+  ];
+  37 -- 15 [
+    Weight=20
+    Season=1
+  ];
+  14 -- 2 [
+    Weight=19
+    Season=1
+  ];
+  109 -- 1 [
+    Weight=19
+    Season=1
+  ];
+  34 -- 10 [
+    Weight=19
+    Season=1
+  ];
+  40 -- 3 [
+    Weight=19
+    Season=1
+  ];
+  19 -- 3 [
+    Weight=19
+    Season=1
+  ];
+  35 -- 11 [
+    Weight=19
+    Season=1
+  ];
+  102 -- 33 [
+    Weight=18
+    Season=1
+  ];
+  108 -- 4 [
+    Weight=18
+    Season=1
+  ];
+  11 -- 7 [
+    Weight=18
+    Season=1
+  ];
+  21 -- 11 [
+    Weight=17
+    Season=1
+  ];
+  82 -- 1 [
+    Weight=17
+    Season=1
+  ];
+  102 -- 12 [
+    Weight=17
+    Season=1
+  ];
+  27 -- 3 [
+    Weight=17
+    Season=1
+  ];
+  36 -- 13 [
+    Weight=17
+    Season=1
+  ];
+  37 -- 10 [
+    Weight=17
+    Season=1
+  ];
+  19 -- 11 [
+    Weight=17
+    Season=1
+  ];
+  35 -- 5 [
+    Weight=16
+    Season=1
+  ];
+  102 -- 20 [
+    Weight=16
+    Season=1
+  ];
+  34 -- 9 [
+    Weight=16
+    Season=1
+  ];
+  13 -- 11 [
+    Weight=16
+    Season=1
+  ];
+  14 -- 11 [
+    Weight=15
+    Season=1
+  ];
+  37 -- 5 [
+    Weight=15
+    Season=1
+  ];
+  12 -- 11 [
+    Weight=15
+    Season=1
+  ];
+  11 -- 9 [
+    Weight=15
+    Season=1
+  ];
+  84 -- 9 [
+    Weight=15
+    Season=1
+  ];
+  38 -- 37 [
+    Weight=15
+    Season=1
+  ];
+  81 -- 39 [
+    Weight=15
+    Season=1
+  ];
+  108 -- 0 [
+    Weight=15
+    Season=1
+  ];
+  84 -- 40 [
+    Weight=15
+    Season=1
+  ];
+  21 -- 0 [
+    Weight=14
+    Season=1
+  ];
+  83 -- 14 [
+    Weight=14
+    Season=1
+  ];
+  5 -- 2 [
+    Weight=14
+    Season=1
+  ];
+  10 -- 5 [
+    Weight=14
+    Season=1
+  ];
+  61 -- 9 [
+    Weight=14
+    Season=1
+  ];
+  41 -- 11 [
+    Weight=14
+    Season=1
+  ];
+  37 -- 3 [
+    Weight=14
+    Season=1
+  ];
+  29 -- 7 [
+    Weight=13
+    Season=1
+  ];
+  84 -- 7 [
+    Weight=13
+    Season=1
+  ];
+  99 -- 1 [
+    Weight=13
+    Season=1
+  ];
+  42 -- 0 [
+    Weight=13
+    Season=1
+  ];
+  40 -- 9 [
+    Weight=13
+    Season=1
+  ];
+  36 -- 35 [
+    Weight=13
+    Season=1
+  ];
+  35 -- 0 [
+    Weight=13
+    Season=1
+  ];
+  40 -- 10 [
+    Weight=13
+    Season=1
+  ];
+  43 -- 0 [
+    Weight=12
+    Season=1
+  ];
+  110 -- 44 [
+    Weight=12
+    Season=1
+  ];
+  9 -- 3 [
+    Weight=12
+    Season=1
+  ];
+  47 -- 9 [
+    Weight=12
+    Season=1
+  ];
+  13 -- 9 [
+    Weight=12
+    Season=1
+  ];
+  45 -- 0 [
+    Weight=12
+    Season=1
+  ];
+  105 -- 41 [
+    Weight=12
+    Season=1
+  ];
+  36 -- 31 [
+    Weight=12
+    Season=1
+  ];
+  104 -- 4 [
+    Weight=11
+    Season=1
+  ];
+  78 -- 14 [
+    Weight=11
+    Season=1
+  ];
+  8 -- 6 [
+    Weight=11
+    Season=1
+  ];
+  22 -- 5 [
+    Weight=11
+    Season=1
+  ];
+  84 -- 5 [
+    Weight=11
+    Season=1
+  ];
+  35 -- 22 [
+    Weight=11
+    Season=1
+  ];
+  82 -- 46 [
+    Weight=11
+    Season=1
+  ];
+  106 -- 47 [
+    Weight=11
+    Season=1
+  ];
+  11 -- 0 [
+    Weight=11
+    Season=1
+  ];
+  105 -- 0 [
+    Weight=11
+    Season=1
+  ];
+  40 -- 37 [
+    Weight=11
+    Season=1
+  ];
+  101 -- 27 [
+    Weight=11
+    Season=1
+  ];
+  50 -- 13 [
+    Weight=11
+    Season=1
+  ];
+  84 -- 37 [
+    Weight=11
+    Season=1
+  ];
+  33 -- 26 [
+    Weight=10
+    Season=1
+  ];
+  37 -- 4 [
+    Weight=10
+    Season=1
+  ];
+  49 -- 5 [
+    Weight=10
+    Season=1
+  ];
+  111 -- 5 [
+    Weight=10
+    Season=1
+  ];
+  30 -- 1 [
+    Weight=10
+    Season=1
+  ];
+  112 -- 28 [
+    Weight=10
+    Season=1
+  ];
+  34 -- 0 [
+    Weight=10
+    Season=1
+  ];
+  34 -- 11 [
+    Weight=10
+    Season=1
+  ];
+  15 -- 2 [
+    Weight=10
+    Season=1
+  ];
+  15 -- 13 [
+    Weight=10
+    Season=1
+  ];
+  26 -- 12 [
+    Weight=10
+    Season=1
+  ];
+  66 -- 9 [
+    Weight=10
+    Season=1
+  ];
+  109 -- 18 [
+    Weight=10
+    Season=1
+  ];
+  47 -- 10 [
+    Weight=10
+    Season=1
+  ];
+  50 -- 0 [
+    Weight=10
+    Season=1
+  ];
+  101 -- 0 [
+    Weight=10
+    Season=1
+  ];
+  113 -- 0 [
+    Weight=10
+    Season=1
+  ];
+  58 -- 26 [
+    Weight=10
+    Season=1
+  ];
+  33 -- 12 [
+    Weight=9
+    Season=1
+  ];
+  7 -- 4 [
+    Weight=9
+    Season=1
+  ];
+  15 -- 14 [
+    Weight=9
+    Season=1
+  ];
+  67 -- 14 [
+    Weight=9
+    Season=1
+  ];
+  40 -- 7 [
+    Weight=9
+    Season=1
+  ];
+  39 -- 28 [
+    Weight=9
+    Season=1
+  ];
+  84 -- 30 [
+    Weight=9
+    Season=1
+  ];
+  46 -- 18 [
+    Weight=9
+    Season=1
+  ];
+  56 -- 12 [
+    Weight=9
+    Season=1
+  ];
+  48 -- 0 [
+    Weight=9
+    Season=1
+  ];
+  104 -- 0 [
+    Weight=9
+    Season=1
+  ];
+  40 -- 19 [
+    Weight=9
+    Season=1
+  ];
+  84 -- 27 [
+    Weight=9
+    Season=1
+  ];
+  13 -- 10 [
+    Weight=9
+    Season=1
+  ];
+  49 -- 11 [
+    Weight=9
+    Season=1
+  ];
+  50 -- 11 [
+    Weight=9
+    Season=1
+  ];
+  51 -- 0 [
+    Weight=8
+    Season=1
+  ];
+  52 -- 0 [
+    Weight=8
+    Season=1
+  ];
+  7 -- 3 [
+    Weight=8
+    Season=1
+  ];
+  13 -- 7 [
+    Weight=8
+    Season=1
+  ];
+  112 -- 1 [
+    Weight=8
+    Season=1
+  ];
+  53 -- 26 [
+    Weight=8
+    Season=1
+  ];
+  47 -- 34 [
+    Weight=8
+    Season=1
+  ];
+  39 -- 18 [
+    Weight=8
+    Season=1
+  ];
+  31 -- 13 [
+    Weight=8
+    Season=1
+  ];
+  40 -- 27 [
+    Weight=8
+    Season=1
+  ];
+  105 -- 37 [
+    Weight=8
+    Season=1
+  ];
+  50 -- 35 [
+    Weight=8
+    Season=1
+  ];
+  84 -- 10 [
+    Weight=8
+    Season=1
+  ];
+  54 -- 11 [
+    Weight=8
+    Season=1
+  ];
+  51 -- 37 [
+    Weight=7
+    Season=1
+  ];
+  33 -- 20 [
+    Weight=7
+    Season=1
+  ];
+  5 -- 4 [
+    Weight=7
+    Season=1
+  ];
+  43 -- 4 [
+    Weight=7
+    Season=1
+  ];
+  34 -- 4 [
+    Weight=7
+    Season=1
+  ];
+  17 -- 4 [
+    Weight=7
+    Season=1
+  ];
+  114 -- 4 [
+    Weight=7
+    Season=1
+  ];
+  84 -- 4 [
+    Weight=7
+    Season=1
+  ];
+  37 -- 14 [
+    Weight=7
+    Season=1
+  ];
+  6 -- 5 [
+    Weight=7
+    Season=1
+  ];
+  50 -- 22 [
+    Weight=7
+    Season=1
+  ];
+  55 -- 17 [
+    Weight=7
+    Season=1
+  ];
+  58 -- 2 [
+    Weight=7
+    Season=1
+  ];
+  35 -- 2 [
+    Weight=7
+    Season=1
+  ];
+  45 -- 37 [
+    Weight=7
+    Season=1
+  ];
+  17 -- 3 [
+    Weight=7
+    Season=1
+  ];
+  56 -- 11 [
+    Weight=7
+    Season=1
+  ];
+  36 -- 11 [
+    Weight=7
+    Season=1
+  ];
+  37 -- 11 [
+    Weight=7
+    Season=1
+  ];
+  103 -- 37 [
+    Weight=7
+    Season=1
+  ];
+  13 -- 4 [
+    Weight=6
+    Season=1
+  ];
+  84 -- 29 [
+    Weight=6
+    Season=1
+  ];
+  50 -- 6 [
+    Weight=6
+    Season=1
+  ];
+  30 -- 28 [
+    Weight=6
+    Season=1
+  ];
+  81 -- 28 [
+    Weight=6
+    Season=1
+  ];
+  99 -- 28 [
+    Weight=6
+    Season=1
+  ];
+  58 -- 20 [
+    Weight=6
+    Season=1
+  ];
+  20 -- 11 [
+    Weight=6
+    Season=1
+  ];
+  37 -- 34 [
+    Weight=6
+    Season=1
+  ];
+  55 -- 0 [
+    Weight=6
+    Season=1
+  ];
+  15 -- 9 [
+    Weight=6
+    Season=1
+  ];
+  57 -- 12 [
+    Weight=6
+    Season=1
+  ];
+  96 -- 12 [
+    Weight=6
+    Season=1
+  ];
+  63 -- 3 [
+    Weight=6
+    Season=1
+  ];
+  11 -- 3 [
+    Weight=6
+    Season=1
+  ];
+  54 -- 25 [
+    Weight=6
+    Season=1
+  ];
+  56 -- 26 [
+    Weight=6
+    Season=1
+  ];
+  102 -- 56 [
+    Weight=6
+    Season=1
+  ];
+  106 -- 0 [
+    Weight=6
+    Season=1
+  ];
+  115 -- 0 [
+    Weight=6
+    Season=1
+  ];
+  102 -- 57 [
+    Weight=6
+    Season=1
+  ];
+  26 -- 11 [
+    Weight=6
+    Season=1
+  ];
+  102 -- 58 [
+    Weight=6
+    Season=1
+  ];
+  105 -- 32 [
+    Weight=6
+    Season=1
+  ];
+  52 -- 4 [
+    Weight=5
+    Season=1
+  ];
+  14 -- 4 [
+    Weight=5
+    Season=1
+  ];
+  44 -- 4 [
+    Weight=5
+    Season=1
+  ];
+  4 -- 3 [
+    Weight=5
+    Season=1
+  ];
+  47 -- 4 [
+    Weight=5
+    Season=1
+  ];
+  66 -- 4 [
+    Weight=5
+    Season=1
+  ];
+  29 -- 9 [
+    Weight=5
+    Season=1
+  ];
+  21 -- 13 [
+    Weight=5
+    Season=1
+  ];
+  108 -- 21 [
+    Weight=5
+    Season=1
+  ];
+  50 -- 14 [
+    Weight=5
+    Season=1
+  ];
+  25 -- 6 [
+    Weight=5
+    Season=1
+  ];
+  32 -- 6 [
+    Weight=5
+    Season=1
+  ];
+  105 -- 6 [
+    Weight=5
+    Season=1
+  ];
+  23 -- 5 [
+    Weight=5
+    Season=1
+  ];
+  37 -- 1 [
+    Weight=5
+    Season=1
+  ];
+  46 -- 24 [
+    Weight=5
+    Season=1
+  ];
+  82 -- 28 [
+    Weight=5
+    Season=1
+  ];
+  68 -- 59 [
+    Weight=5
+    Season=1
+  ];
+  113 -- 43 [
+    Weight=5
+    Season=1
+  ];
+  34 -- 3 [
+    Weight=5
+    Season=1
+  ];
+  63 -- 34 [
+    Weight=5
+    Season=1
+  ];
+  41 -- 15 [
+    Weight=5
+    Season=1
+  ];
+  15 -- 3 [
+    Weight=5
+    Season=1
+  ];
+  84 -- 42 [
+    Weight=5
+    Season=1
+  ];
+  104 -- 9 [
+    Weight=5
+    Season=1
+  ];
+  57 -- 2 [
+    Weight=5
+    Season=1
+  ];
+  96 -- 2 [
+    Weight=5
+    Season=1
+  ];
+  45 -- 3 [
+    Weight=5
+    Season=1
+  ];
+  45 -- 25 [
+    Weight=5
+    Season=1
+  ];
+  60 -- 13 [
+    Weight=5
+    Season=1
+  ];
+  81 -- 18 [
+    Weight=5
+    Season=1
+  ];
+  25 -- 23 [
+    Weight=5
+    Season=1
+  ];
+  36 -- 0 [
+    Weight=5
+    Season=1
+  ];
+  61 -- 50 [
+    Weight=5
+    Season=1
+  ];
+  61 -- 11 [
+    Weight=5
+    Season=1
+  ];
+  62 -- 11 [
+    Weight=5
+    Season=1
+  ];
+  63 -- 0 [
+    Weight=5
+    Season=1
+  ];
+  27 -- 10 [
+    Weight=5
+    Season=1
+  ];
+  37 -- 13 [
+    Weight=5
+    Season=1
+  ];
+  105 -- 13 [
+    Weight=5
+    Season=1
+  ];
+  107 -- 13 [
+    Weight=5
+    Season=1
+  ];
+  101 -- 37 [
+    Weight=5
+    Season=1
+  ];
+  116 -- 51 [
+    Weight=4
+    Season=1
+  ];
+  58 -- 33 [
+    Weight=4
+    Season=1
+  ];
+  64 -- 4 [
+    Weight=4
+    Season=1
+  ];
+  108 -- 52 [
+    Weight=4
+    Season=1
+  ];
+  29 -- 15 [
+    Weight=4
+    Season=1
+  ];
+  29 -- 3 [
+    Weight=4
+    Season=1
+  ];
+  40 -- 29 [
+    Weight=4
+    Season=1
+  ];
+  14 -- 7 [
+    Weight=4
+    Season=1
+  ];
+  45 -- 5 [
+    Weight=4
+    Season=1
+  ];
+  61 -- 5 [
+    Weight=4
+    Season=1
+  ];
+  105 -- 5 [
+    Weight=4
+    Season=1
+  ];
+  34 -- 7 [
+    Weight=4
+    Season=1
+  ];
+  84 -- 1 [
+    Weight=4
+    Season=1
+  ];
+  53 -- 2 [
+    Weight=4
+    Season=1
+  ];
+  102 -- 53 [
+    Weight=4
+    Season=1
+  ];
+  117 -- 59 [
+    Weight=4
+    Season=1
+  ];
+  20 -- 12 [
+    Weight=4
+    Season=1
+  ];
+  34 -- 16 [
+    Weight=4
+    Season=1
+  ];
+  55 -- 3 [
+    Weight=4
+    Season=1
+  ];
+  64 -- 9 [
+    Weight=4
+    Season=1
+  ];
+  64 -- 0 [
+    Weight=4
+    Season=1
+  ];
+  64 -- 10 [
+    Weight=4
+    Season=1
+  ];
+  108 -- 64 [
+    Weight=4
+    Season=1
+  ];
+  19 -- 15 [
+    Weight=4
+    Season=1
+  ];
+  35 -- 15 [
+    Weight=4
+    Season=1
+  ];
+  37 -- 17 [
+    Weight=4
+    Season=1
+  ];
+  38 -- 0 [
+    Weight=4
+    Season=1
+  ];
+  104 -- 3 [
+    Weight=4
+    Season=1
+  ];
+  105 -- 3 [
+    Weight=4
+    Season=1
+  ];
+  63 -- 16 [
+    Weight=4
+    Season=1
+  ];
+  16 -- 0 [
+    Weight=4
+    Season=1
+  ];
+  16 -- 10 [
+    Weight=4
+    Season=1
+  ];
+  65 -- 0 [
+    Weight=4
+    Season=1
+  ];
+  82 -- 39 [
+    Weight=4
+    Season=1
+  ];
+  63 -- 37 [
+    Weight=4
+    Season=1
+  ];
+  63 -- 10 [
+    Weight=4
+    Season=1
+  ];
+  66 -- 10 [
+    Weight=4
+    Season=1
+  ];
+  116 -- 0 [
+    Weight=4
+    Season=1
+  ];
+  67 -- 13 [
+    Weight=4
+    Season=1
+  ];
+  117 -- 68 [
+    Weight=4
+    Season=1
+  ];
+  107 -- 69 [
+    Weight=4
+    Season=1
+  ];
+  108 -- 10 [
+    Weight=4
+    Season=1
+  ];
+  105 -- 8 [
+    Weight=4
+    Season=1
+  ];
+  107 -- 70 [
+    Weight=4
+    Season=1
+  ];
+  117 -- 71 [
+    Weight=4
+    Season=1
+  ];
+  72 -- 41 [
+    Weight=3
+    Season=1
+  ];
+  93 -- 72 [
+    Weight=3
+    Season=1
+  ];
+  51 -- 15 [
+    Weight=3
+    Season=1
+  ];
+  98 -- 51 [
+    Weight=3
+    Season=1
+  ];
+  57 -- 33 [
+    Weight=3
+    Season=1
+  ];
+  15 -- 4 [
+    Weight=3
+    Season=1
+  ];
+  40 -- 4 [
+    Weight=3
+    Season=1
+  ];
+  73 -- 5 [
+    Weight=3
+    Season=1
+  ];
+  64 -- 52 [
+    Weight=3
+    Season=1
+  ];
+  74 -- 35 [
+    Weight=3
+    Season=1
+  ];
+  38 -- 29 [
+    Weight=3
+    Season=1
+  ];
+  29 -- 27 [
+    Weight=3
+    Season=1
+  ];
+  75 -- 0 [
+    Weight=3
+    Season=1
+  ];
+  117 -- 14 [
+    Weight=3
+    Season=1
+  ];
+  76 -- 0 [
+    Weight=3
+    Season=1
+  ];
+  23 -- 6 [
+    Weight=3
+    Season=1
+  ];
+  49 -- 6 [
+    Weight=3
+    Season=1
+  ];
+  54 -- 6 [
+    Weight=3
+    Season=1
+  ];
+  79 -- 5 [
+    Weight=3
+    Season=1
+  ];
+  9 -- 5 [
+    Weight=3
+    Season=1
+  ];
+  62 -- 5 [
+    Weight=3
+    Season=1
+  ];
+  54 -- 5 [
+    Weight=3
+    Season=1
+  ];
+  108 -- 5 [
+    Weight=3
+    Season=1
+  ];
+  64 -- 7 [
+    Weight=3
+    Season=1
+  ];
+  7 -- 2 [
+    Weight=3
+    Season=1
+  ];
+  45 -- 7 [
+    Weight=3
+    Season=1
+  ];
+  38 -- 7 [
+    Weight=3
+    Season=1
+  ];
+  27 -- 7 [
+    Weight=3
+    Season=1
+  ];
+  105 -- 7 [
+    Weight=3
+    Season=1
+  ];
+  77 -- 28 [
+    Weight=3
+    Season=1
+  ];
+  1 -- 0 [
+    Weight=3
+    Season=1
+  ];
+  28 -- 24 [
+    Weight=3
+    Season=1
+  ];
+  109 -- 24 [
+    Weight=3
+    Season=1
+  ];
+  44 -- 43 [
+    Weight=3
+    Season=1
+  ];
+  22 -- 15 [
+    Weight=3
+    Season=1
+  ];
+  105 -- 22 [
+    Weight=3
+    Season=1
+  ];
+  78 -- 13 [
+    Weight=3
+    Season=1
+  ];
+  78 -- 35 [
+    Weight=3
+    Season=1
+  ];
+  78 -- 11 [
+    Weight=3
+    Season=1
+  ];
+  107 -- 79 [
+    Weight=3
+    Season=1
+  ];
+  64 -- 34 [
+    Weight=3
+    Season=1
+  ];
+  118 -- 46 [
+    Weight=3
+    Season=1
+  ];
+  103 -- 46 [
+    Weight=3
+    Season=1
+  ];
+  42 -- 27 [
+    Weight=3
+    Season=1
+  ];
+  12 -- 0 [
+    Weight=3
+    Season=1
+  ];
+  37 -- 12 [
+    Weight=3
+    Season=1
+  ];
+  27 -- 9 [
+    Weight=3
+    Season=1
+  ];
+  105 -- 9 [
+    Weight=3
+    Season=1
+  ];
+  108 -- 9 [
+    Weight=3
+    Season=1
+  ];
+  37 -- 2 [
+    Weight=3
+    Season=1
+  ];
+  117 -- 2 [
+    Weight=3
+    Season=1
+  ];
+  45 -- 40 [
+    Weight=3
+    Season=1
+  ];
+  49 -- 45 [
+    Weight=3
+    Season=1
+  ];
+  99 -- 18 [
+    Weight=3
+    Season=1
+  ];
+  101 -- 3 [
+    Weight=3
+    Season=1
+  ];
+  37 -- 16 [
+    Weight=3
+    Season=1
+  ];
+  65 -- 37 [
+    Weight=3
+    Season=1
+  ];
+  47 -- 0 [
+    Weight=3
+    Season=1
+  ];
+  49 -- 23 [
+    Weight=3
+    Season=1
+  ];
+  54 -- 23 [
+    Weight=3
+    Season=1
+  ];
+  66 -- 0 [
+    Weight=3
+    Season=1
+  ];
+  80 -- 11 [
+    Weight=3
+    Season=1
+  ];
+  26 -- 0 [
+    Weight=3
+    Season=1
+  ];
+  117 -- 0 [
+    Weight=3
+    Season=1
+  ];
+  83 -- 31 [
+    Weight=3
+    Season=1
+  ];
+  82 -- 81 [
+    Weight=3
+    Season=1
+  ];
+  103 -- 82 [
+    Weight=3
+    Season=1
+  ];
+  109 -- 82 [
+    Weight=3
+    Season=1
+  ];
+  58 -- 11 [
+    Weight=3
+    Season=1
+  ];
+  27 -- 13 [
+    Weight=3
+    Season=1
+  ];
+  83 -- 13 [
+    Weight=3
+    Season=1
+  ];
+  54 -- 49 [
+    Weight=3
+    Season=1
+  ];
+  107 -- 35 [
+    Weight=3
+    Season=1
+  ];
+  108 -- 84 [
+    Weight=3
+    Season=1
+  ];
+  105 -- 72 [
+    Weight=2
+    Season=1
+  ];
+  85 -- 51 [
+    Weight=2
+    Season=1
+  ];
+  85 -- 56 [
+    Weight=2
+    Season=1
+  ];
+  51 -- 29 [
+    Weight=2
+    Season=1
+  ];
+  51 -- 5 [
+    Weight=2
+    Season=1
+  ];
+  51 -- 18 [
+    Weight=2
+    Season=1
+  ];
+  56 -- 51 [
+    Weight=2
+    Season=1
+  ];
+  51 -- 27 [
+    Weight=2
+    Season=1
+  ];
+  51 -- 10 [
+    Weight=2
+    Season=1
+  ];
+  104 -- 51 [
+    Weight=2
+    Season=1
+  ];
+  56 -- 33 [
+    Weight=2
+    Season=1
+  ];
+  30 -- 4 [
+    Weight=2
+    Season=1
+  ];
+  110 -- 4 [
+    Weight=2
+    Season=1
+  ];
+  11 -- 4 [
+    Weight=2
+    Season=1
+  ];
+  73 -- 14 [
+    Weight=2
+    Season=1
+  ];
+  73 -- 13 [
+    Weight=2
+    Season=1
+  ];
+  52 -- 7 [
+    Weight=2
+    Season=1
+  ];
+  52 -- 34 [
+    Weight=2
+    Season=1
+  ];
+  52 -- 9 [
+    Weight=2
+    Season=1
+  ];
+  52 -- 40 [
+    Weight=2
+    Season=1
+  ];
+  52 -- 10 [
+    Weight=2
+    Season=1
+  ];
+  74 -- 11 [
+    Weight=2
+    Season=1
+  ];
+  21 -- 5 [
+    Weight=2
+    Season=1
+  ];
+  21 -- 7 [
+    Weight=2
+    Season=1
+  ];
+  21 -- 12 [
+    Weight=2
+    Season=1
+  ];
+  37 -- 21 [
+    Weight=2
+    Season=1
+  ];
+  75 -- 37 [
+    Weight=2
+    Season=1
+  ];
+  86 -- 53 [
+    Weight=2
+    Season=1
+  ];
+  86 -- 26 [
+    Weight=2
+    Season=1
+  ];
+  87 -- 53 [
+    Weight=2
+    Season=1
+  ];
+  87 -- 26 [
+    Weight=2
+    Season=1
+  ];
+  76 -- 14 [
+    Weight=2
+    Season=1
+  ];
+  34 -- 14 [
+    Weight=2
+    Season=1
+  ];
+  76 -- 5 [
+    Weight=2
+    Season=1
+  ];
+  76 -- 2 [
+    Weight=2
+    Season=1
+  ];
+  116 -- 76 [
+    Weight=2
+    Season=1
+  ];
+  41 -- 6 [
+    Weight=2
+    Season=1
+  ];
+  61 -- 6 [
+    Weight=2
+    Season=1
+  ];
+  5 -- 1 [
+    Weight=2
+    Season=1
+  ];
+  34 -- 5 [
+    Weight=2
+    Season=1
+  ];
+  70 -- 5 [
+    Weight=2
+    Season=1
+  ];
+  12 -- 7 [
+    Weight=2
+    Season=1
+  ];
+  65 -- 7 [
+    Weight=2
+    Season=1
+  ];
+  47 -- 7 [
+    Weight=2
+    Season=1
+  ];
+  19 -- 7 [
+    Weight=2
+    Season=1
+  ];
+  101 -- 7 [
+    Weight=2
+    Season=1
+  ];
+  108 -- 7 [
+    Weight=2
+    Season=1
+  ];
+  118 -- 1 [
+    Weight=2
+    Season=1
+  ];
+  10 -- 1 [
+    Weight=2
+    Season=1
+  ];
+  53 -- 20 [
+    Weight=2
+    Season=1
+  ];
+  53 -- 12 [
+    Weight=2
+    Season=1
+  ];
+  94 -- 53 [
+    Weight=2
+    Season=1
+  ];
+  56 -- 53 [
+    Weight=2
+    Season=1
+  ];
+  58 -- 53 [
+    Weight=2
+    Season=1
+  ];
+  119 -- 24 [
+    Weight=2
+    Season=1
+  ];
+  118 -- 24 [
+    Weight=2
+    Season=1
+  ];
+  24 -- 18 [
+    Weight=2
+    Season=1
+  ];
+  46 -- 28 [
+    Weight=2
+    Season=1
+  ];
+  37 -- 28 [
+    Weight=2
+    Season=1
+  ];
+  88 -- 22 [
+    Weight=2
+    Season=1
+  ];
+  88 -- 60 [
+    Weight=2
+    Season=1
+  ];
+  88 -- 13 [
+    Weight=2
+    Season=1
+  ];
+  84 -- 43 [
+    Weight=2
+    Season=1
+  ];
+  108 -- 43 [
+    Weight=2
+    Season=1
+  ];
+  22 -- 0 [
+    Weight=2
+    Season=1
+  ];
+  27 -- 22 [
+    Weight=2
+    Season=1
+  ];
+  100 -- 22 [
+    Weight=2
+    Season=1
+  ];
+  101 -- 22 [
+    Weight=2
+    Season=1
+  ];
+  107 -- 22 [
+    Weight=2
+    Season=1
+  ];
+  89 -- 0 [
+    Weight=2
+    Season=1
+  ];
+  78 -- 31 [
+    Weight=2
+    Season=1
+  ];
+  34 -- 15 [
+    Weight=2
+    Season=1
+  ];
+  34 -- 13 [
+    Weight=2
+    Season=1
+  ];
+  108 -- 34 [
+    Weight=2
+    Season=1
+  ];
+  55 -- 45 [
+    Weight=2
+    Season=1
+  ];
+  63 -- 55 [
+    Weight=2
+    Season=1
+  ];
+  55 -- 10 [
+    Weight=2
+    Season=1
+  ];
+  30 -- 18 [
+    Weight=2
+    Season=1
+  ];
+  64 -- 47 [
+    Weight=2
+    Season=1
+  ];
+  84 -- 64 [
+    Weight=2
+    Season=1
+  ];
+  45 -- 15 [
+    Weight=2
+    Season=1
+  ];
+  116 -- 15 [
+    Weight=2
+    Season=1
+  ];
+  15 -- 10 [
+    Weight=2
+    Season=1
+  ];
+  120 -- 15 [
+    Weight=2
+    Season=1
+  ];
+  42 -- 3 [
+    Weight=2
+    Season=1
+  ];
+  42 -- 40 [
+    Weight=2
+    Season=1
+  ];
+  90 -- 12 [
+    Weight=2
+    Season=1
+  ];
+  90 -- 57 [
+    Weight=2
+    Season=1
+  ];
+  90 -- 26 [
+    Weight=2
+    Season=1
+  ];
+  12 -- 9 [
+    Weight=2
+    Season=1
+  ];
+  91 -- 11 [
+    Weight=2
+    Season=1
+  ];
+  9 -- 2 [
+    Weight=2
+    Season=1
+  ];
+  121 -- 9 [
+    Weight=2
+    Season=1
+  ];
+  117 -- 9 [
+    Weight=2
+    Season=1
+  ];
+  50 -- 2 [
+    Weight=2
+    Season=1
+  ];
+  19 -- 2 [
+    Weight=2
+    Season=1
+  ];
+  84 -- 45 [
+    Weight=2
+    Season=1
+  ];
+  122 -- 18 [
+    Weight=2
+    Season=1
+  ];
+  18 -- 0 [
+    Weight=2
+    Season=1
+  ];
+  84 -- 18 [
+    Weight=2
+    Season=1
+  ];
+  48 -- 17 [
+    Weight=2
+    Season=1
+  ];
+  35 -- 17 [
+    Weight=2
+    Season=1
+  ];
+  107 -- 92 [
+    Weight=2
+    Season=1
+  ];
+  93 -- 41 [
+    Weight=2
+    Season=1
+  ];
+  41 -- 32 [
+    Weight=2
+    Season=1
+  ];
+  38 -- 27 [
+    Weight=2
+    Season=1
+  ];
+  93 -- 11 [
+    Weight=2
+    Season=1
+  ];
+  16 -- 3 [
+    Weight=2
+    Season=1
+  ];
+  48 -- 3 [
+    Weight=2
+    Season=1
+  ];
+  108 -- 3 [
+    Weight=2
+    Season=1
+  ];
+  123 -- 16 [
+    Weight=2
+    Season=1
+  ];
+  94 -- 26 [
+    Weight=2
+    Season=1
+  ];
+  37 -- 36 [
+    Weight=2
+    Season=1
+  ];
+  50 -- 36 [
+    Weight=2
+    Season=1
+  ];
+  36 -- 10 [
+    Weight=2
+    Season=1
+  ];
+  61 -- 47 [
+    Weight=2
+    Season=1
+  ];
+  108 -- 61 [
+    Weight=2
+    Season=1
+  ];
+  102 -- 95 [
+    Weight=2
+    Season=1
+  ];
+  50 -- 23 [
+    Weight=2
+    Season=1
+  ];
+  124 -- 0 [
+    Weight=2
+    Season=1
+  ];
+  19 -- 0 [
+    Weight=2
+    Season=1
+  ];
+  125 -- 0 [
+    Weight=2
+    Season=1
+  ];
+  126 -- 0 [
+    Weight=2
+    Season=1
+  ];
+  67 -- 35 [
+    Weight=2
+    Season=1
+  ];
+  57 -- 26 [
+    Weight=2
+    Season=1
+  ];
+  96 -- 26 [
+    Weight=2
+    Season=1
+  ];
+  102 -- 96 [
+    Weight=2
+    Season=1
+  ];
+  105 -- 40 [
+    Weight=2
+    Season=1
+  ];
+  108 -- 40 [
+    Weight=2
+    Season=1
+  ];
+  102 -- 97 [
+    Weight=2
+    Season=1
+  ];
+  115 -- 27 [
+    Weight=2
+    Season=1
+  ];
+  98 -- 37 [
+    Weight=2
+    Season=1
+  ];
+  103 -- 99 [
+    Weight=2
+    Season=1
+  ];
+  100 -- 13 [
+    Weight=2
+    Season=1
+  ];
+  100 -- 35 [
+    Weight=2
+    Season=1
+  ];
+  101 -- 13 [
+    Weight=2
+    Season=1
+  ];
+  84 -- 13 [
+    Weight=2
+    Season=1
+  ];
+  37 -- 19 [
+    Weight=2
+    Season=1
+  ];
+  121 -- 37 [
+    Weight=2
+    Season=1
+  ];
+  105 -- 50 [
+    Weight=2
+    Season=1
+  ];
+  101 -- 10 [
+    Weight=2
+    Season=1
+  ];
+  115 -- 101 [
+    Weight=2
+    Season=1
+  ];
+  117 -- 35 [
+    Weight=2
+    Season=1
+  ];
+  120 -- 11 [
+    Weight=2
+    Season=1
+  ];
+  84 -- 11 [
+    Weight=2
+    Season=1
+  ];
+}
