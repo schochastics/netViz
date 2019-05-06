@@ -1,5 +1,29 @@
 # Network Visualization 
 
+# Workshop (07/05/19)
+
+**14:00 - 14:30**: A short introduction to network visualizations  
+**14:30 - 15:30**: Introduction to visone  
+**15:15 - 15:30**: Break  
+**15:30 - 16:45**: Network visualization in R using [*ggraph*](https://github.com/thomasp85/ggraph), [*graphlayouts*](https://github.com/schochastics/graphlayouts) and [*snahelper*](https://github.com/schochastics/snahelper)  
+**16:45 - 17:00**: Q&A and wrap-up
+
+## Prerequisites
+
+No prior knowledge of visone is required. Make sure, though, that it is properly running on your laptop.  
+Prior knowledge in R is useful but not required.  
+
+In case of installation and setup issues, please contact *david.schoch@manchester.ac.uk*
+
+## Useful links
+
+- Download and install [R](https://cran.r-project.org/) and [Rstudio](https://www.rstudio.com/products/rstudio/download/#download) for your respective operating system (Windows, Mac or Linux).
+
+- Download [visone](http://visone.info/html/download.html) (Mac: choose visone-2.17.dmg, Windows: choose visone-2.17.jar )
+
+- [Help for Visone](http://visone.info/wiki/index.php/Installation_%28trail%29) (ignore the R connection part)
+
+
 # Resources
 
 ## visone
