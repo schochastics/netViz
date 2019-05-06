@@ -13,7 +13,7 @@
 - [igraph tutorial](https://kateto.net/networks-r-igraph)
 - [my blog](http://blog.schochastics.net)
 - [thomasp85](https://twitter.com/thomasp85) blog posts on ggraph: [layouts](https://www.data-imaginist.com/2017/ggraph-introduction-layouts/), [nodes](https://www.data-imaginist.com/2017/ggraph-introduction-nodes/), [edges](https://www.data-imaginist.com/2017/ggraph-introduction-edges/)
-- [blog entry on tidygraph](https://www.data-imaginist.com/2017/introducing-tidygraph/)
+- [blog post  on tidygraph](https://www.data-imaginist.com/2017/introducing-tidygraph/)
 
 ## Colors
 
