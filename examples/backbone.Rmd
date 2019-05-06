@@ -1,0 +1,65 @@
+---
+title: "Backbone Layout"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r packages,warning=FALSE,message=FALSE,fig.align='center'}
+library(igraph)
+library(graphlayouts)
+library(ggraph)
+```
+
+`layout_as_backbone()` is a layout algorithm that can help emphasize hidden group structures if they exist.
+For illustration, we create a clustered network with the `sample_islands` function from igraph.
+
+```{r island_network}
+
+#create network with a group structure (9 groups, 40 vertices each)
+g <- sample_islands(9,40,0.4,15)
+g <- simplify(g)
+V(g)$grp <- as.character(rep(1:9,each=40))
+```
+
+The network `g` consists of 9 groups with 40 vertices each. The density of each intra-group edges is
+0.4 and there are 15 edges running between each pair of groups. Lets start using stress minimization 
+as a layout algorithm.
+
+
+```{r island_stress}
+ggraph(g,layout="stress")+
+  geom_edge_link0(edge_colour=rgb(0,0,0,0.5),edge_width=0.1)+
+  geom_node_point(aes(col=grp))+
+  scale_color_brewer(palette = "Set1")+
+  theme_graph()+
+  theme(legend.position = "none")
+
+```
+
+As you see, we basically see nothing. The network seems very dense without any special 
+structural features. Enter `layout_as_backbone()`.
+
+```{r backbone_layout}
+bb <- layout_as_backbone(g,keep = 0.4)
+E(g)$col <- F
+E(g)$col[bb$backbone] <- T
+
+```
+
+The algorithm works as follows. First, it constructs a spanning tree (more precise the union of all maximum spanning trees). Second, it computes edge weights that capture the embeddedness of edges (technical details can be found in the [paper](http://jgaa.info/accepted/2015/NocajOrtmannBrandes2015.19.2.pdf)). These weights are then ordered decreasingly. The top ranked nodes are then added to the tree and a layout of this "backbone" network is computed.
+The number of top ranked nodes added can be controlled with the `keep` parameter. In our example, the top 40% edges are added to the tree. Once the layout is calculated, all edges are addd back to the graph.
+
+```{r backbone plot}
+ggraph(g,layout="manual",node.positions=data.frame(x=bb$xy[,1],y=bb$xy[,2]))+
+  geom_edge_link0(aes(edge_colour = col),edge_width=0.1)+
+  geom_node_point(aes(colour = grp))+
+  scale_color_brewer(palette = "Set1")+
+  scale_edge_color_manual(values=c(rgb(0,0,0,0.3),rgb(0,0,0,1)))+
+  theme_graph()+
+  theme(legend.position = "none")
+```
+
+
