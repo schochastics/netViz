@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+/* Logo Header */
+.logo-header {
+  position:fixed;
+  height: 50px;
+  width: 100px;
+  top: 0px;
+  right: 0px;
+  background-position: 9% 15%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("figures/uom_logo.png");
+}
+
+/* Title slide */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.title-slide {
+  background-color: #660099;
+}
+
+/* date on title slide */
+.date {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;  
+  position: relative;
+}
+
+.date:before, .date:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.date:before {
+  margin: 10px 0 0 -110px;
+}
+
+.date:after {
+  margin: 10px 0 0 10px;
+}
+
+/* Reduce margin around slide header */
+
+.remark-slide-content{
+  padding: 1em 2em 1em 2em;
+}
+
+/* Header colors and Font*/
+
+h1, h2, h3 {
+   font-family: 'Yanone Kaffeesatz';
+   font-weight: normal;
+   color: #660099;
+}
+
+.remark-slide-content > h1:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/*text styling*/
+
+body { font-family: 'Droid Serif'; }
+
+.box {
+  border-left: 6px solid #660099;
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.cite{
+  color: #A9A9A9;
+  font-size: 16px;
+}
+
+.small{
+  font-size: 14px;
+}
+
+.medium{
+  font-size: 16px;
+}
+
+.shadow {
+   -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+/* links */
+
+a {
+ color: #999999;
+}
+
+/* Custom list style*/
+ul {
+  list-style: none; 
+}
+
+ul li::before {
+  content: "\2022";  
+  color: #660099; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+/* a blockquote */
+
+blockquote {
+  font-style: italic;
+  font-size: 1.25em;
+  background: #f9f9f9;
+  border-left: 10px solid #660099;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #660099;
+  content: "“";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockqote:after {
+  content:no-close-quote;
+}
+
+blockquote p {
+  display: inline;
+}
+
+
+/*footers*/
+
+.footnotes {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  width: 80%;
+  font-size: 0.6em;
+}
+
+.logo-footer {
+content: "";
+    position: absolute;
+    bottom: 15px;
+    right:   15px;
+    height: 40px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("figures/freeman.jpg");
+}
+
+
+/* slide styles*/
+
+.retro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("figures/old_paper.png");
+}
+
+/*instructions {font: 16px 'AmericanTypewriter', Cambria, Georgia; color: #282625; margin: 0 auto; width: 600px;}*/
+.paper {
+    padding: 37px 55px 27px;
+    position: relative;
+    border: 1px solid #B5B5B5;
+    background: white;
+    background: -webkit-linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
+    background: -moz-linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
+    background: linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
+    -webkit-background-size: 100% 30px;
+    -moz-background-size: 100% 30px;
+    -ms-background-size: 100% 30px;
+    background-size: 100% 30px;
+}
+.paper::before {content:""; z-index:-1; margin:0 1px; width:706px; height:10px; position:absolute; bottom:-3px; left:0; background:white; border:1px solid #B5B5B5;}
+.paper::after {content:''; position:absolute; width:0px; top:0; left:39px; bottom:0; border-left:1px solid #F8D3D3;}

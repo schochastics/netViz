@@ -1,10 +1,7 @@
 .Rproj.user/
 Rscripts/
 VisoneTutorial-archeology.pdf
-figures/
-*.html
 *.js
 libs/
 *.Rproj
-slides*
-*.css
+slides_files

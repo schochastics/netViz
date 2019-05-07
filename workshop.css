@@ -1,0 +1,168 @@
+/* similar to pull left/right  */
+.left-code {
+  color: #777;
+  width: 38%;
+  height: 92%;
+  float: left;
+}
+.right-plot {
+  width: 60%;
+  float: right;
+  padding-left: 1%;
+}
+
+.plot-callout {
+  height: 225px;
+  width: 450px;
+  bottom: 5%;
+  right: 5%;
+  position: absolute;
+  padding: 0px;
+  z-index: 100;
+}
+
+.net-callout {
+  height: 450px;
+  width: 450px;
+  bottom: 10%;
+  right: 5%;
+  position: absolute;
+  padding: 0px;
+  z-index: 100;
+}
+
+.plot-callout img {
+  width: 100%;
+  border: 4px solid #23373B;
+}
+
+.net-callout img {
+  width: 100%;
+  border: 4px solid #23373B;
+}
+
+/* table style */
+table {  
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 640px; 
+    border-collapse: 
+    collapse; border-spacing: 0; 
+}
+
+td, th {  
+    border: 1px solid transparent; /* No more visible border */
+    height: 30px; 
+    transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+th {  
+    background: #DFDFDF;  /* Darken header a bit */
+    font-weight: bold;
+}
+
+td {  
+    background: #FAFAFA;
+    text-align: center;
+}
+
+/* Cells in even rows (2,4,6...) are one color */        
+tr:nth-child(even) td { background: #F1F1F1; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+tr:nth-child(odd) td { background: #FEFEFE; }  
+
+/* circled text effect */
+.circled {
+  position: relative;
+}
+.circled:after {
+  border: .25em solid #660099;
+  border-top: none;
+  border-radius: 1.5em 1em 2em 1.5em;
+  bottom: -.3em;
+  content: '';
+  left: -.3em;
+  position: absolute;
+  right: -.3em;
+  top: -.1em;
+}
+.circled:before {
+  border-top: .25em solid #660099;
+  border-radius: .5em;
+  content: '';
+  height: 1em;
+  left: 0;
+  position: absolute;
+  top: -.3em;
+  transform: rotate(-10deg);
+  width: 2em;
+}
+
+/* canvas positioning */
+#container{
+  position:relative;
+  width:1000px;
+  height:600px;
+}
+.part{
+  position:absolute;
+}
+
+.canvasLeft{
+  left:0;
+}
+
+.canvasRight{
+  left:400px;
+}   
+
+
+/* text marker highlighting */
+
+.gold-highlight, .pink-highlight, .yellow-highlight {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-left: 3px;
+ }
+
+.gold-highlight {
+    background: #FFCC33; /* Default color, all browsers */
+}
+
+.gold-highlight::selection {
+    background: #FFCC33; /* Selection color, WebKit/Blink Browsers */
+}
+
+.gold-highlight::-moz-selection {
+    background: #FFCC33; /* Selection color, Gecko Browsers */
+}
+
+.pink-highlight {
+    background: #FFCCFF; /* Default color, all browsers */
+}
+
+.pink-highlight::selection {
+    background: #FF99FF; /* Selection color, WebKit/Blink Browsers */
+}
+
+.pink-highlight::-moz-selection {
+    background: #FF99FF; /* Selection color, Gecko Browsers */
+}
+
+.yellow-highlight {
+    background: #FFFFCC; /* Default color, all browsers */
+}
+
+.yellow-highlight::selection {
+    background: #FFFF66; /* Selection color, WebKit/Blink Browsers */
+}
+
+.yellow-highlight::-moz-selection {
+    background: #FFFF66; /* Selection color, Gecko Browsers */
+}
+
+.fake-code{
+ font-family: monospace;
+}

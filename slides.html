@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Network Visualization Workshop</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="David Schoch" />
+    <meta name="date" content="2019-07-05" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <script src="libs/kePrint/kePrint.js"></script>
+    <script src="https://rawgit.com/pshihn/rough/master/dist/rough.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    
+    <script type="text/javascript">
+    $( document ).ready(function() {
+      var net = rough.canvas(document.getElementById('network'));
+      
+      function displayNetwork(){
+        net.line(617.2,205.8,486.1,273.6,{stroke: 'rgba(0,192,0,1)'}); 
+        net.line(395,157.6,440.7,50);     
+        net.line(395,157.6,210.2,181.7);   
+        net.line(395,157.6,486.1,273.6,{stroke: 'rgba(0,192,0,1)'});   
+        net.line(438.5,399.2,268.2,450);   
+        net.line(438.5,399.2,486.1,273.6,{stroke: 'rgba(0,192,0,1)'}); 
+        net.line(100,282,210.2,181.7);     
+        net.line(100,282,100.7,399.2);    
+        net.line(100,282,206.6,362.2,{stroke: 'rgba(192,0,0,1)'});    
+        net.line(268.2,450,100.7,399.2);  
+        net.line(268.2,450,206.6,362.2,{stroke: 'rgba(192,0,0,1)'});       
+        net.line(210.2,181.7,100.5,99.6); 
+        net.line(210.2,181.7,346.5,231.2); 
+        net.line(486.1,273.6,352.5,319,{stroke: 'rgba(0,192,0,1)'});   
+        net.line(486.1,273.6,643.6,320.6,{stroke: 'rgba(0,192,0,1)'}); 
+        net.line(486.1,273.6,346.5,231.2,{stroke: 'rgba(0,192,0,1)'}); 
+        net.line(800,345.1,643.6,320.6);   
+        net.line(100.7,399.2,206.6,362.2,{stroke: 'rgba(192,0,0,1)'});    
+        net.line(352.5,319,206.6,362.2,{stroke: 'rgba(192,0,0,1)'});    
+        net.line(352.5,319,346.5,231.2);  
+        
+        net.circle(617.2,205.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+        net.circle(395,157.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});  
+        net.circle(438.5,399.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+        net.circle(100,282,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});    
+        net.circle(268.2,450,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});  
+        net.circle(440.7,50,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});   
+        net.circle(210.2,181.7,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+        net.circle(100.5,99.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'}); 
+        net.circle(486.1,273.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+        //net.circle(800,345.1,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});  
+        net.circle(100.7,399.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+        net.circle(352.5,319,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});  
+        net.circle(643.6,320.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+        net.circle(206.6,362.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+        net.circle(346.5,231.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+        
+        net.circle(617.2,205.8,50,{fill: 'rgba(0,0,192,1)'});
+        net.circle(395,157.6,50,{fill: 'rgba(0,0,192,1)'});  
+        net.circle(438.5,399.2,50,{fill: 'rgba(0,0,192,1)'});
+        net.circle(100,282,50,{fill: 'rgba(0,0,192,1)'});    
+        net.circle(268.2,450,50,{fill: 'rgba(0,0,192,1)'});  
+        net.circle(440.7,50,50,{fill: 'rgba(0,0,192,1)'});   
+        net.circle(210.2,181.7,50,{fill: 'rgba(0,0,192,1)'});
+        net.circle(100.5,99.6,50,{fill: 'rgba(0,0,192,1)'}); 
+        net.circle(486.1,273.6,50,{fill: 'rgba(0,192,0,1)',fillStyle: 'zigzag'});
+        //net.circle(800,345.1,50,{fill: 'rgba(0,0,192,1)'});  
+        net.circle(100.7,399.2,50,{fill: 'rgba(0,0,192,1)'});
+        net.circle(352.5,319,50,{fill: 'rgba(0,0,192,1)'});  
+        net.circle(643.6,320.6,50,{fill: 'rgba(0,0,192,1)'});
+        net.circle(206.6,362.2,50,{fill: 'rgba(192,0,0,1)',fillStyle: 'cross-hatch'});
+        net.circle(346.5,231.2,50,{fill: 'rgba(0,0,192,1)'});
+        
+        var canv = document.getElementById('network');
+        var ctx = canv.getContext("2d");
+        ctx.font = '18px Parisienne';
+        ctx.textAlign = "center";
+        ctx.fillText("Acciaiuol",617.2,175.8);  
+        ctx.fillText("Albizzi",455,157.6);      
+        ctx.fillText("Barbadori",438.5,439.2);  
+        ctx.fillText("Bischeri",100,252);       
+        ctx.fillText("Castellan",268.2,490);    
+        ctx.fillText("Ginori",440.7,20);        
+        ctx.fillText("Guadagni",210.2,151.7);   
+        ctx.fillText("Lamberteschi",100.5,70.6);
+        ctx.fillText("Medici",486.1,243.6);     
+        //ctx.fillText("Pazzi",800,315.1);        
+        ctx.fillText("Peruzzi",100.7,439.2);    
+        ctx.fillText("Ridolfi",352.5,359);      
+        ctx.fillText("Salviati",643.6,290.6);   
+        ctx.fillText("Strozzi",206.6,332.2);    
+        ctx.fillText("Tornabuon",346.5,201.2); 
+        
+        ctx.font = '28px Parisienne';
+        ctx.textAlign = "start";
+        ctx.fillText("Florentine Families Marriages",10,20);
+      }
+      
+      WebFont.load({
+        google: {
+           families: ['Nothing you could do', 'Parisienne']
+        },
+        active: function() {
+          displayNetwork();
+        }
+      });
+    });
+    </script>
+    
+    <script type="text/javascript">
+      $( document ).ready(function() {
+      var net1 = rough.canvas(document.getElementById('test'));
+    // vertices 1
+      net1.circle(400,250,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(386.9,331.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(349.8,399.4,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(295.2,441.3,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(232.5,450,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(172.5,424.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(125.6,368.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(100,291.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(100,208.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(125.6,131.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(172.5,75.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(232.5,50,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(295.2,58.7,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(349.8,100.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      net1.circle(386.9,168.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+      // vertices 2
+      net1.circle(400,250,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(386.9,331.8,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(349.8,399.4,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(295.2,441.3,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(232.5,450,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(172.5,424.2,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(125.6,368.2,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(100,291.8,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(100,208.2,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(125.6,131.8,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(172.5,75.8,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(232.5,50,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(295.2,58.7,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(349.8,100.6,50,{fill: 'rgba(0,0,192,1)'});
+      net1.circle(386.9,168.2,50,{fill: 'rgba(0,0,192,1)'});
+      // edges
+      net1.line(400,250,100,208.2);
+      net1.line(386.9,331.8,172.5,424.2);
+      net1.line(386.9,331.8,125.6,368.2);
+      net1.line(386.9,331.8,100,208.2);
+      net1.line(349.8,399.4,232.5,450);
+      net1.line(349.8,399.4,100,208.2);
+      net1.line(295.2,441.3,125.6,368.2);
+      net1.line(295.2,441.3,172.5,75.8);
+      net1.line(295.2,441.3,349.8,100.6);
+      net1.line(232.5,450,172.5,75.8);
+      net1.line(232.5,450,349.8,100.6);
+      net1.line(125.6,368.2,100,291.8);
+      net1.line(125.6,368.2,386.9,168.2);
+      net1.line(100,208.2,232.5,50);
+      net1.line(100,208.2,295.2,58.7);
+      net1.line(100,208.2,386.9,168.2);
+      net1.line(125.6,131.8,295.2,58.7);
+      net1.line(172.5,75.8,349.8,100.6);
+      net1.line(232.5,50,349.8,100.6);
+      net1.line(232.5,50,386.9,168.2);
+      
+      net1.line(0, 0, 500, 500, {strokeWidth: 3,stroke: 'red',roughness: 2.1});
+      net1.line(500, 0, 0, 500, {strokeWidth: 3,stroke: 'red',roughness: 2.1});
+      
+      
+    });
+    </script>
+    <link rel="stylesheet" href="xaringan.css" type="text/css" />
+    <link rel="stylesheet" href="workshop.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+class: title-slide middle center inverse   
+
+# Network Visualization Workshop
+
+### David Schoch 
+Department of Sociology, University of Manchester  
+
+&lt;img src="figures/pNET.gif" height="400px"&gt;
+
+.date[07/05/2019]
+
+---
+
+### about me
+
+Presidential Fellow in Sociology  
+academically grew up around "graph drawers"  
+check out my blog (http://blog.schochastics.net) and twitter (@schochastics)
+
+--
+
+### schedule
+
+**14:00 - 14:30**: A short introduction to network visualizations  
+**14:30 - 15:30**: Introduction to visone  
+**15:15 - 15:30**: Break  
+**15:30 - 16:45**: Network visualization in R using [*ggraph*](https://github.com/thomasp85/ggraph), [*graphlayouts*](https://github.com/schochastics/graphlayouts) and [*snahelper*](https://github.com/schochastics/snahelper)  
+**16:45 - 17:00**: Q&amp;A and wrap-up
+
+--
+
+### prepared?
+
+- downloaded visone and run it at least once?
+- downloaded and installed R+Rstudio?
+
+
+```r
+install.packages(c("igraph","ggraph","graphlayouts","remotes"))
+remotes::install.github("schochastics/snahelper")
+```
+
+
+&lt;!-- &lt;canvas id="network" width="960" height="500" class="part canvasRight"&gt; &lt;/canvas&gt; --&gt;
+
+---
+# ordinary data 
+.left-code[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; drat &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; wt &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; qsec &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; vs &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; am &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; gear &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; carb &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.620 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16.46 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.875 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 22.8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.85 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.320 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.61 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 258 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.215 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19.44 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 360 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 175 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.440 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Valiant &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 225 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 105 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.76 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.460 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.22 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+---
+# ordinary data 
+.left-code[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; drat &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; wt &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; qsec &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; vs &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; am &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; gear &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; carb &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.620 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16.46 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.875 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 22.8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.85 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.320 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.61 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 21.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 258 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.215 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19.44 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 18.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 360 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 175 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.440 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Valiant &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 18.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 225 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 105 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.76 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.460 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.22 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+
+
+.plot-callout[
+&lt;img src="slides_files/figure-html/mtcars1-callout-1.png" height="99%" /&gt;
+]
+
+---
+
+# ordinary data 
+.left-code[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; drat &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; wt &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; qsec &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; vs &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; am &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; gear &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; carb &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.620 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16.46 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.875 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 22.8 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.85 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.320 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.61 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 21.4 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 258 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.215 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19.44 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 18.7 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 360 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 175 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.440 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Valiant &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 18.1 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 225 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 105 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.76 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.460 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.22 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+
+
+.plot-callout[
+&lt;img src="slides_files/figure-html/mtcars2-callout-1.png" height="99%" /&gt;
+]
+
+---
+
+# ordinary data 
+.left-code[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; drat &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; wt &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; qsec &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; vs &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; am &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; gear &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; carb &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.620 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16.46 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.875 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 22.8 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 93 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.85 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.320 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.61 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 21.4 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 258 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.215 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19.44 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 18.7 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 360 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 175 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.440 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Valiant &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 18.1 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 225 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 105 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.76 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.460 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.22 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+
+
+.plot-callout[
+&lt;img src="slides_files/figure-html/mtcars3-callout-1.png" height="99%" /&gt;
+]
+
+---
+
+# ordinary data 
+.left-code[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; drat &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; wt &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; qsec &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; vs &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; am &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; gear &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; carb &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.620 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16.46 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.875 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 22.8 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 3.85 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.320 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.61 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.4 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 258 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 3.08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.215 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19.44 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.7 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 360 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 175 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 3.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.440 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Valiant &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.1 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 225 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 105 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: white !important;background-color: #660099 !important;"&gt; 2.76 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.460 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.22 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+
+
+.plot-callout[
+&lt;img src="slides_files/figure-html/mtcars4-callout-1.png" height="99%" /&gt;
+]
+
+---
+# network data
+.pull-left[
+
+&lt;table&gt;
+&lt;caption&gt;Nodes&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; name &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; status &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; gender &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; office &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; years &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; age &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; practice &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; school &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 01 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 31 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 64 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 32 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 62 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 03 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 13 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 67 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 04 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 31 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 59 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 05 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 31 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 59 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 06 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 29 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 55 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+.pull-right[
+&lt;table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;&lt;span class="circled"&gt;Edges&lt;/span&gt;&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; from &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; to &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 01 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 02 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 01 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 04 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 01 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 05 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 01 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 08 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 01 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 11 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 01 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 16 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+&lt;/br&gt;
+&lt;/br&gt;
+
+.center[**no prescribed way of placing nodes in the plane**]
+
+---
+
+# why visualizing networks is harder
+
+**ordinary data**
+
+- clear file format (spreadsheet, csv)
+- clear data format (rows: observations, columns: variables)
+- plot style dependent on variable scale (barchart, scatterplot,boxplot,...) 
+- illustrate relations between variables
+- given relative positions
+
+**network data**
+
+- many different file formats (csv,graphml,dot,dl,gexf,net,gdf,gml,nnf,sif,xgmml)
+- different data formats (adjacency matrix,edgelist,adjaceny list,incidence matrix)
+- how to choose a proper layout algorithm?
+- can we draw any conclusions from a network plot?
+- more degrees of freedom
+
+---
+
+# you still want to tell a story!
+
+.pull-left[&lt;img src="figures/central-lethal.png" height=500px&gt;]
+.pull-right[&lt;img src="figures/yeast.png"&gt;]
+
+---
+
+# graph layouts
+.pull-left[
+![](slides_files/figure-html/layouts-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+**R**
+
+```r
+c("layout_as_bipartite","layout_as_star", 
+"layout_as_tree", "layout_in_circle", 
+"layout_nicely","layout_on_grid", 
+"layout_on_sphere", "layout_randomly", 
+"layout_with_dh","layout_with_drl",
+"layout_with_fr", "layout_with_gem", 
+"layout_with_graphopt", "layout_with_kk", 
+"layout_with_lgl", "layout_with_mds", 
+"layout_with_sugiyama")
+```
+
+the layouts we want are not supported!
+]
+---
+
+# graph layouts
+**stress minimization**: "all purpose layout" which is .gold-highlight[deterministic]  
+
+**backbone layout**: disentangle hairballs and enhance hidden group structures (.gold-highlight[if they exist])
+
+**radial layouts**: centrality based drawings and .gold-highlight[ego networks]
+
+&lt;img src="figures/hairball.jpg" height=350px&gt;
+&lt;img src="figures/stress.jpg" height=400px style="margin-left:100px"&gt;
+---
+
+# colors, shapes et al.
+
+.pull-left[
+![](slides_files/figure-html/rainbow_cols-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+  ![](https://www.dataquest.io/wp-content/uploads/2019/01/full-180529_considercolor5.png)
+  [source](https://www.dataquest.io/blog/what-to-consider-when-choosing-colors-for-data-visualization/)
+]
+
+See this series on colors  
+https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/
+
+**at our disposal**
+
+- node colors
+- node sizes
+- node shapes
+- edge width
+- edge colors
+- edge linetypes
+
+---
+
+# two big no-no's
+
+.pull-left[
+&lt;img src="https://media.giphy.com/media/12XMGIWtrHBl5e/source.gif" height=480px&gt;
+]
+
+.pull-right[
+&lt;img src="figures/ugly-hairball.png" height=550px&gt;
+]
+---
+
+# two big no-no's 
+
+.pull-left[
+![](slides_files/figure-html/curved-edges-1.png)&lt;!-- --&gt;
+]
+
+--
+
+.pull-right[
+![](figures/reciprocal.png)
+]
+
+---
+
+#one smallish no-no
+
+.pull-left[
+  ![](figures/edge_order1.jpg)
+]
+
+--
+
+.pull-right[
+  ![](figures/edge_order2.jpg)
+]
+
+---
+
+# Tools
+
+**Software**
+
+- UCINET .cite[https://sites.google.com/site/ucinetsoftware/home]
+- Gephi .cite[https://gephi.org/]
+- .gold-highlight[visone] .cite[http://visone.info/]
+- Graphviz .cite[https://www.graphviz.org/]
+- Cytoscape .cite[https://cytoscape.org/]
+- Pajek .cite[http://mrvar.fdv.uni-lj.si/pajek/]
+- NodeXL .cite[https://www.smrfoundation.org/nodexl/]
+- ...
+
+**Libraries**
+
+- NetworkX (Python) .cite[http://networkx.github.io/]
+- igraph (R, Python Mathematica) .cite[https://igraph.org/]
+- ...
+
+**Programming environments**
+
+- Python
+- .gold-highlight[R]
+
+---
+
+class: title-slide middle center inverse   
+
+# Network Visualization in visone
+
+
+---
+
+class: title-slide middle center inverse   
+
+# Network Visualization in R
+
+---
+
+# Networks in R
+
+**why R?**
+
+- independent package development vs. centralized software development
+- don't start the Python vs. R fight
+- the R community is awesome! (twitter: #rstats, #RLadies; https://www.r-bloggers.com)
+
+--
+
+**R packages for networks**
+
+- .gold-highlight[igraph]
+- statnet
+- .gold-highlight[ggraph]
+- tidygraph 
+- .gold-highlight[graphlayouts]
+- .gold-highlight[snahelper]
+- network
+- ergm
+- netrankr
+- egor
+- ...
+
+---
+# How to get your network into R
+
+**network fileformats **
+
+```r
+?read.graph
+```
+
+.small[
+&lt;blockquote&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;&lt;title&gt;R: Reading foreign file formats&lt;/title&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="R.css" /&gt;
+&lt;/head&gt;&lt;body&gt;
+
+&lt;table width="100%" summary="page for read_graph"&gt;&lt;tr&gt;&lt;td&gt;read_graph&lt;/td&gt;&lt;td style="text-align: right;"&gt;R Documentation&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h2&gt;Reading foreign file formats&lt;/h2&gt;
+
+&lt;h3&gt;Description&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;read_graph&lt;/code&gt; function is able to read graphs in various
+representations from a file, or from a http connection. Currently some
+simple formats are supported.
+&lt;/p&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+
+&lt;pre&gt;
+read_graph(file, format = c("edgelist", "pajek", "ncol", "lgl",
+  "graphml", "dimacs", "graphdb", "gml", "dl"), ...)
+&lt;/pre&gt;
+
+
+&lt;/blockquote&gt;
+]
+
+---
+
+# How to get your network into R
+
+**network fileformats **
+
+```r
+g &lt;- read.graph("data/GoT/gotS1.graphml",format="graphml")
+g
+```
+
+```
+## IGRAPH e7ab30d UN-- 127 550 -- 
+## + attr: title (g/c), name (v/c), clu (v/c), size (v/n), id (v/c),
+## | Weight (e/n), Season (e/n)
+## + edges from e7ab30d (vertex names):
+##  [1] Ned         --Robert       Daenerys    --Jorah       
+##  [3] Jon         --Sam          Ned         --Littlefinger
+##  [5] Ned         --Varys        Daenerys    --Drogo       
+##  [7] Ned         --Arya         Catelyn     --Robb        
+##  [9] Bronn       --Tyrion       Ned         --Cersei      
+## [11] Cersei      --Robert       Littlefinger--Varys       
+## [13] Shae        --Tyrion       Ned         --Catelyn     
+## + ... omitted several edges
+```
+
+---
+
+# How to get your network into R
+
+**Adjacency matrices ** (check fileformat!!!)
+.center[&lt;img src="figures/adjmat.png" height=250px&gt;]
+
+```r
+A1 &lt;- read.table("data/GoT/gotS1_matrix.dat", header = T, row.names = 1, sep = " ")
+A1 &lt;- as.matrix(A1)
+A1[1:2,1:8]
+```
+
+```
+##          Ned Daenerys Jon Littlefinger Arya Catelyn Bronn Cersei
+## Ned        0        3  29          107   90      69     0     86
+## Daenerys   3        0   0            0    0       2     0      0
+```
+
+---
+
+# How to get your network into R
+
+**Adjacency matrices ** (check fileformat!!!)
+.center[&lt;img src="figures/adjmat1.png" height=150px&gt;]
+
+```r
+A2 &lt;- read.table("data/GoT/gotS1_matrix1.dat",header = F,sep=",")
+A2 &lt;- as.matrix(A2)
+A2[1:2,1:8]
+```
+
+```
+##      V1 V2 V3  V4 V5 V6 V7 V8
+## [1,]  0  3 29 107 90 69  0 86
+## [2,]  3  0  0   0  0  2  0  0
+```
+
+---
+
+
+```r
+g1 &lt;- graph_from_adjacency_matrix(A1,mode="undirected",weighted = T)
+igraph::print.igraph(g1,max.lines = 4)
+```
+
+```
+## IGRAPH 238b7ed UNW- 127 550 -- 
+## + attr: name (v/c), weight (e/n)
+## + edges from 238b7ed (vertex names):
+## [1] Ned--Daenerys     Ned--Jon          Ned--Littlefinger Ned--Arya        
+## [5] Ned--Catelyn      Ned--Cersei       Ned--Joffrey     
+## + ... omitted several edges
+```
+
+
+
+```r
+g2 &lt;- graph_from_adjacency_matrix(A2,mode="undirected",weighted = T)
+igraph::print.igraph(g2,max.lines = 4)
+```
+
+```
+## IGRAPH b5c61c4 UNW- 127 550 -- 
+## + attr: name (v/c), weight (e/n)
+## + edges from b5c61c4 (vertex names):
+##  [1] V1--V2  V1--V3  V1--V4  V1--V5  V1--V6  V1--V8  V1--V10 V1--V11
+##  [9] V1--V12 V1--V13 V1--V14 V1--V15 V1--V16 V1--V17 V1--V18 V1--V19
+## + ... omitted several edges
+```
+
+---
+# How to get your network into R
+
+**other formats**
+
+
+```r
+graph_from_edgelist(el,directed = TRUE/FALSE)
+graph_from_adj_list(adjlist,mode = "all"/"in"/"out")
+graph_from_data_frame(d,directed = TRUE/FALSE,vertices) 
+```
+
+**example** (taken from https://kateto.net/networks-r-igraph)
+
+
+```r
+edges &lt;- read.table(file = "data/media/Dataset1-Media-Example-EDGES.csv",sep=",",header=T)
+nodes &lt;- read.table(file = "data/media/Dataset1-Media-Example-NODES.csv",sep=",",header=T)
+net &lt;- graph_from_data_frame(d = edges,directed=TRUE,vertices=nodes)
+net
+```
+
+```
+## IGRAPH fb07010 DNW- 17 52 -- 
+## + attr: name (v/c), media (v/c), media.type (v/n), type.label
+## | (v/c), audience.size (v/n), weight (e/n), type (e/c)
+## + edges from fb07010 (vertex names):
+##  [1] s01-&gt;s02 s01-&gt;s02 s01-&gt;s03 s01-&gt;s04 s04-&gt;s11 s05-&gt;s15 s06-&gt;s17
+##  [8] s08-&gt;s09 s08-&gt;s09 s03-&gt;s04 s04-&gt;s03 s01-&gt;s15 s15-&gt;s01 s15-&gt;s01
+## [15] s16-&gt;s17 s16-&gt;s06 s06-&gt;s16 s09-&gt;s10 s08-&gt;s07 s07-&gt;s08 s07-&gt;s10
+## [22] s05-&gt;s02 s02-&gt;s03 s02-&gt;s01 s03-&gt;s01 s12-&gt;s13 s12-&gt;s14 s14-&gt;s13
+## [29] s13-&gt;s12 s05-&gt;s09 s02-&gt;s10 s03-&gt;s12 s04-&gt;s06 s10-&gt;s03 s03-&gt;s10
+## [36] s04-&gt;s12 s13-&gt;s17 s06-&gt;s06 s14-&gt;s11 s03-&gt;s11 s12-&gt;s06 s04-&gt;s17
+## [43] s17-&gt;s04 s08-&gt;s03 s03-&gt;s08 s07-&gt;s14 s15-&gt;s06 s15-&gt;s04 s05-&gt;s01
+## + ... omitted several edges
+```
+
+
+
+---
+# "naive" plotting
+
+```r
+plot(g)
+```
+
+![](figures/igraph-plot.png)
+
+igraph tutorial by Katherine Ognyanova (https://kateto.net/networks-r-igraph)
+
+---
+
+# grammar of graphics
+
+&lt;blockquote&gt;
+A grammar of graphics is a framework which follows a layered approach to describe and construct visualizations or graphics in a structured manner. 
+&lt;/blockquote&gt;
+(think Photoshop, also see http://vita.had.co.nz/papers/layered-grammar.pdf)  
+
+.center[&lt;img src="figures/ggstack.png" height=400px&gt;]
+
+---
+
+# ggraph ("ggplot for networks")  
+
+&lt;img src="https://github.com/thomasp85/ggraph/raw/master/man/figures/logo.png" style="float:left;margin-right:10px"&gt;
+/dʒiː.dʒɪˈrɑːf/ (or g-giraffe)  
+`layout` + `edge layer` + `node layer` + `edge scales` + `node scales` + `theme`
+
+
+```r
+library(igraph)
+library(ggraph)
+library(graphlayouts)
+
+got_graphs &lt;- readRDS("data/GoT/GoT.RDS")
+```
+
+**layouts**
+
+```r
+#stress minimization
+ggraph(got_graphs[[1]],layout="stress")
+
+# radial centrality
+ggraph(got_graphs[[1]],layout="centrality",cent = degree(got_graphs[[1]]))
+```
+
+
+---
+
+# the ggraph package "geoms"
+
+**node geoms**
+
+```r
+c("geom_node_arc_bar", "geom_node_circle", "geom_node_label", 
+"geom_node_point", "geom_node_text", "geom_node_tile", "geom_node_treemap")
+```
+
+
+**edge geoms**
+
+```r
+c("geom_edge_arc", "geom_edge_arc0", "geom_edge_arc2", "geom_edge_density", 
+"geom_edge_diagonal", "geom_edge_diagonal0", "geom_edge_diagonal2", 
+"geom_edge_elbow", "geom_edge_elbow0", "geom_edge_elbow2", "geom_edge_fan", 
+"geom_edge_fan0", "geom_edge_fan2", "geom_edge_hive", "geom_edge_hive0", 
+"geom_edge_hive2", "geom_edge_link", "geom_edge_link0", "geom_edge_link2", 
+"geom_edge_loop", "geom_edge_loop0")
+```
+
+--
+
+Most likely, you will only ever need .gold-highlight[`geom_edge_link0`] and .gold-highlight[`geom_node_point`] together with .gold-highlight[`geom_node_text`]
+
+---
+
+#"aes(thetics)" and scales
+
+.pull-left[
+
+```r
+edge_attr_names(got_graphs[[1]])
+```
+
+```
+## [1] "Weight" "Season"
+```
+]
+
+.pull-right[
+
+```r
+vertex_attr_names(got_graphs[[1]])
+```
+
+```
+## [1] "name" "clu"  "size"
+```
+]
+
+map variables to aesthetics with **aes()**
+
+.fake-code[geom_edge_link0(.gold-highlight[aes(edge_width=Weight)],edge_colour="grey66")  ]
+.fake-code[geom_node_point(.gold-highlight[aes(fill=clu,size=size)],shape=21,colour="grey25")] &lt;img src="figures/pts_shapes.png", height=30px style="float:right;margin-right:120px"&gt;
+
+change appearances with **scale_* **
+
+.fake-code[
+scale_edge_width_continuous(range=c(0.1,1.5))  
+scale_size_continuous(range=c(1,8))  
+scale_fill_manual(values=got_palette)
+]
+
+
+---
+
+
+
+&lt;style type="text/css"&gt;
+.remark-code{ line-height: 2; }
+&lt;/style&gt;
+
+.pull-left[
+
+```r
+*ggraph(got_graphs[[1]],layout = "stress")
+```
+]
+.net-callout[
+![](slides_files/figure-html/output1-1.png)&lt;!-- --&gt;
+]
+
+---
+
+.pull-left[
+
+```r
+ggraph(got_graphs[[1]],layout = "stress")+
+*geom_edge_link0(aes(edge_width=Weight),
+*               edge_colour="grey66")
+```
+]
+.net-callout[
+![](slides_files/figure-html/output2-1.png)&lt;!-- --&gt;
+]
+
+---
+
+.pull-left[
+
+```r
+ggraph(got_graphs[[1]],layout = "stress")+
+geom_edge_link0(aes(edge_width=Weight),
+                edge_colour="grey66")+
+*geom_node_point(aes(fill=clu,size=size),
+*               shape=21,col="grey25")
+```
+]
+.net-callout[
+![](slides_files/figure-html/output3-1.png)&lt;!-- --&gt;
+]
+
+---
+
+.pull-left[
+
+```r
+ggraph(got_graphs[[1]],layout = "stress")+
+geom_edge_link0(aes(edge_width=Weight),
+                edge_colour="grey66")+
+geom_node_point(aes(fill=clu,size=size),
+                shape=21,col="grey25")+
+*scale_edge_width_continuous(range=c(0.1,1.5))
+```
+]
+.net-callout[
+![](slides_files/figure-html/output5-1.png)&lt;!-- --&gt;
+]
+
+---
+
+.pull-left[
+
+```r
+ggraph(got_graphs[[1]],layout = "stress")+
+geom_edge_link0(aes(edge_width=Weight),
+                edge_colour="grey66")+
+geom_node_point(aes(fill=clu,size=size),
+                shape=21,col="grey25")+
+scale_edge_width_continuous(range=c(0.1,1.5))+
+*scale_size_continuous(range=c(1,8))
+```
+]
+.net-callout[
+![](slides_files/figure-html/output6-1.png)&lt;!-- --&gt;
+]
+
+---
+
+.pull-left[
+
+```r
+ggraph(got_graphs[[1]],layout = "stress")+
+geom_edge_link0(aes(edge_width=Weight),
+                edge_colour="grey66")+
+geom_node_point(aes(fill=clu,size=size),
+                shape=21,col="grey25")+
+scale_edge_width_continuous(range=c(0.1,1.5))+
+scale_size_continuous(range=c(1,8))+
+*scale_fill_manual(values=got_palette)
+```
+]
+.net-callout[
+![](slides_files/figure-html/output7-1.png)&lt;!-- --&gt;
+]
+
+---
+
+.pull-left[
+
+```r
+ggraph(got_graphs[[1]],layout = "stress")+
+geom_edge_link0(aes(edge_width=Weight),
+                edge_colour="grey66")+
+geom_node_point(aes(fill=clu,size=size),
+                shape=21,col="grey25")+
+scale_edge_width_continuous(range=c(0.1,1.5))+
+scale_size_continuous(range=c(1,8))+
+scale_fill_manual(values=got_palette)+
+*theme_graph()
+```
+]
+.net-callout[
+![](slides_files/figure-html/output8-1.png)&lt;!-- --&gt;
+]
+
+---
+
+.pull-left[
+
+```r
+ggraph(got_graphs[[1]],layout = "stress")+
+geom_edge_link0(aes(edge_width=Weight),
+                edge_colour="grey66")+
+geom_node_point(aes(fill=clu,size=size),
+                shape=21,col="grey25")+
+scale_edge_width_continuous(range=c(0.1,1.5))+
+scale_size_continuous(range=c(1,8))+
+scale_fill_manual(values=got_palette)+
+theme_graph()+
+*theme(legend.position = "none")
+```
+]
+.net-callout[
+![](slides_files/figure-html/output9-1.png)&lt;!-- --&gt;
+]
+
+---
+# some more examples
+
+**node labels**
+
+```r
+V(got_graphs[[1]])$rank &lt;- rank(-V(got_graphs[[1]])$size)
+  
+ggraph(got_graphs[[1]],layout = "stress")+
+  geom_edge_link0(aes(edge_width = Weight),
+                  edge_colour = "grey66")+
+  geom_node_point(aes(fill=clu,size=size),
+                  shape = 21,col = "grey25")+
+*  geom_node_text(aes(filter = (rank&lt;=10),label = name),size = 7,repel = TRUE)+
+  scale_edge_width_continuous(range = c(0.1,1.5))+
+  scale_size_continuous(range = c(1,8))+
+  scale_fill_manual(values = got_palette)+
+  theme_graph()+
+  theme(legend.position = "none")
+```
+
+---
+
+&lt;img src="slides_files/figure-html/node_labels-callout-1.png" height="99%" /&gt;
+
+---
+
+# some more examples
+
+**radial layout** ("focused")
+
+
+```r
+*ggraph(got_graphs[[1]],layout = "focus",v = 1)+
+*  draw_circle(use = "focus",max.circle = 3)+
+  geom_edge_link0(aes(edge_width = Weight),
+                  edge_colour = "grey66")+
+  geom_node_point(aes(fill=clu,size=size),
+                  shape = 21,col = "grey25")+
+  geom_node_text(aes(filter = (rank&lt;=10),label = name),size = 7,repel = TRUE)+
+  scale_edge_width_continuous(range = c(0.1,1.5))+
+  scale_size_continuous(range = c(1,8))+
+  scale_fill_manual(values = got_palette)+
+*  coord_fixed()+
+  theme_graph()+
+  theme(legend.position = "none")
+```
+
+---
+
+&lt;img src="slides_files/figure-html/radial_got-callout-1.png" height="99%" /&gt;
+
+---
+
+# some more examples 
+
+**radial layout** ("centrality")
+
+```r
+bc &lt;- betweenness(got_graphs[[1]])
+*ggraph(got_graphs[[1]],layout = "centrality",cent = bc)+
+*draw_circle(use = "cent")+
+  geom_edge_link0(aes(edge_width = Weight),
+                  edge_colour = "grey66")+
+  geom_node_point(aes(fill=clu,size=size),
+                  shape = 21,col = "grey25")+
+  geom_node_text(aes(filter = (rank&lt;=10),label = name),size = 7,repel = TRUE)+
+  scale_edge_width_continuous(range = c(0.1,1.5))+
+  scale_size_continuous(range = c(1,8))+
+  scale_fill_manual(values = got_palette)+
+*  coord_fixed()+
+  theme_graph()+
+  theme(legend.position = "none")
+```
+
+---
+
+&lt;img src="slides_files/figure-html/radialc_got-callout-1.png" height="99%" /&gt;
+
+---
+class: middle center
+
+&lt;img src="https://media.giphy.com/media/xUPGcmF2iGsTGEFVL2/giphy.gif" height=480px&gt;
+
+---
+
+# Enter snahelper
+
+.pull-left[
+
+```r
+#install.packages(remotes)
+library(remotes)
+install_github("schochastics/snahelper")
+```
+
+ &lt;img src="https://github.com/schochastics/snahelper/raw/master/figures/example.png" height=420px&gt;
+]
+
+--
+.pull-right[
+&lt;img src="https://media.giphy.com/media/lJ0JGfNBrRWJVCRChd/giphy.gif" height=480px&gt;
+]
+
+---
+
+class: title-slide middle center inverse   
+
+# Wrap up
+
+---
+
+# organize your own data!
+
+.box[
+**nodes**  
+a table where each row represents a node with its attributes (use .circled[headers]):  
+
+|name|gender|age|category|
+|--|--|--|--|
+|Person A|1|34|Friend|
+|Person B|0|42|Family|
+]
+&lt;/br&gt;  
+.box[
+**edges**  
+a table where each row represents an edge with its attributes (use same names as for nodes):  
+
+|from|to|weight|
+|--|--|--|
+|Person A|Person B|12|
+]
+
+possibly a codebook for attributes
+
+--
+
+.center[**the more you organize the easier the analysis/visualization**]
+
+---
+
+## piece of cake 🎂
+
+**in R**
+
+```r
+nodes &lt;- read.table("nodes.csv",header = TRUE,sep = ",")
+edges &lt;- read.table("edges.csv",header = TRUE,sep = ",")
+g &lt;- graph_from_data_frame(edges,directed = FALSE, vertices = nodes)
+🥳🥳🥳
+```
+
+**visone**
+
+- open your `edges.csv` file
+- go to attribute manager 
+- import `nodes.csv`
+- 🥳🥳🥳
+
+---
+
+# if not...
+
+.center[&lt;img src="figures/code_horror.png" height=550px&gt;]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

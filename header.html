@@ -1,0 +1,162 @@
+<script src="https://rawgit.com/pshihn/rough/master/dist/rough.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+  var net = rough.canvas(document.getElementById('network'));
+  
+  function displayNetwork(){
+    net.line(617.2,205.8,486.1,273.6,{stroke: 'rgba(0,192,0,1)'}); 
+    net.line(395,157.6,440.7,50);     
+    net.line(395,157.6,210.2,181.7);   
+    net.line(395,157.6,486.1,273.6,{stroke: 'rgba(0,192,0,1)'});   
+    net.line(438.5,399.2,268.2,450);   
+    net.line(438.5,399.2,486.1,273.6,{stroke: 'rgba(0,192,0,1)'}); 
+    net.line(100,282,210.2,181.7);     
+    net.line(100,282,100.7,399.2);    
+    net.line(100,282,206.6,362.2,{stroke: 'rgba(192,0,0,1)'});    
+    net.line(268.2,450,100.7,399.2);  
+    net.line(268.2,450,206.6,362.2,{stroke: 'rgba(192,0,0,1)'});       
+    net.line(210.2,181.7,100.5,99.6); 
+    net.line(210.2,181.7,346.5,231.2); 
+    net.line(486.1,273.6,352.5,319,{stroke: 'rgba(0,192,0,1)'});   
+    net.line(486.1,273.6,643.6,320.6,{stroke: 'rgba(0,192,0,1)'}); 
+    net.line(486.1,273.6,346.5,231.2,{stroke: 'rgba(0,192,0,1)'}); 
+    net.line(800,345.1,643.6,320.6);   
+    net.line(100.7,399.2,206.6,362.2,{stroke: 'rgba(192,0,0,1)'});    
+    net.line(352.5,319,206.6,362.2,{stroke: 'rgba(192,0,0,1)'});    
+    net.line(352.5,319,346.5,231.2);  
+    
+    net.circle(617.2,205.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+    net.circle(395,157.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});  
+    net.circle(438.5,399.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+    net.circle(100,282,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});    
+    net.circle(268.2,450,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});  
+    net.circle(440.7,50,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});   
+    net.circle(210.2,181.7,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+    net.circle(100.5,99.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'}); 
+    net.circle(486.1,273.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+    //net.circle(800,345.1,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});  
+    net.circle(100.7,399.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+    net.circle(352.5,319,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});  
+    net.circle(643.6,320.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+    net.circle(206.6,362.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+    net.circle(346.5,231.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+    
+    net.circle(617.2,205.8,50,{fill: 'rgba(0,0,192,1)'});
+    net.circle(395,157.6,50,{fill: 'rgba(0,0,192,1)'});  
+    net.circle(438.5,399.2,50,{fill: 'rgba(0,0,192,1)'});
+    net.circle(100,282,50,{fill: 'rgba(0,0,192,1)'});    
+    net.circle(268.2,450,50,{fill: 'rgba(0,0,192,1)'});  
+    net.circle(440.7,50,50,{fill: 'rgba(0,0,192,1)'});   
+    net.circle(210.2,181.7,50,{fill: 'rgba(0,0,192,1)'});
+    net.circle(100.5,99.6,50,{fill: 'rgba(0,0,192,1)'}); 
+    net.circle(486.1,273.6,50,{fill: 'rgba(0,192,0,1)',fillStyle: 'zigzag'});
+    //net.circle(800,345.1,50,{fill: 'rgba(0,0,192,1)'});  
+    net.circle(100.7,399.2,50,{fill: 'rgba(0,0,192,1)'});
+    net.circle(352.5,319,50,{fill: 'rgba(0,0,192,1)'});  
+    net.circle(643.6,320.6,50,{fill: 'rgba(0,0,192,1)'});
+    net.circle(206.6,362.2,50,{fill: 'rgba(192,0,0,1)',fillStyle: 'cross-hatch'});
+    net.circle(346.5,231.2,50,{fill: 'rgba(0,0,192,1)'});
+    
+    var canv = document.getElementById('network');
+    var ctx = canv.getContext("2d");
+    ctx.font = '18px Parisienne';
+    ctx.textAlign = "center";
+    ctx.fillText("Acciaiuol",617.2,175.8);  
+    ctx.fillText("Albizzi",455,157.6);      
+    ctx.fillText("Barbadori",438.5,439.2);  
+    ctx.fillText("Bischeri",100,252);       
+    ctx.fillText("Castellan",268.2,490);    
+    ctx.fillText("Ginori",440.7,20);        
+    ctx.fillText("Guadagni",210.2,151.7);   
+    ctx.fillText("Lamberteschi",100.5,70.6);
+    ctx.fillText("Medici",486.1,243.6);     
+    //ctx.fillText("Pazzi",800,315.1);        
+    ctx.fillText("Peruzzi",100.7,439.2);    
+    ctx.fillText("Ridolfi",352.5,359);      
+    ctx.fillText("Salviati",643.6,290.6);   
+    ctx.fillText("Strozzi",206.6,332.2);    
+    ctx.fillText("Tornabuon",346.5,201.2); 
+    
+    ctx.font = '28px Parisienne';
+    ctx.textAlign = "start";
+    ctx.fillText("Florentine Families Marriages",10,20);
+  }
+  
+  WebFont.load({
+    google: {
+       families: ['Nothing you could do', 'Parisienne']
+    },
+    active: function() {
+      displayNetwork();
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+  var net1 = rough.canvas(document.getElementById('test'));
+// vertices 1
+  net1.circle(400,250,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(386.9,331.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(349.8,399.4,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(295.2,441.3,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(232.5,450,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(172.5,424.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(125.6,368.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(100,291.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(100,208.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(125.6,131.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(172.5,75.8,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(232.5,50,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(295.2,58.7,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(349.8,100.6,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  net1.circle(386.9,168.2,63,{fill: 'rgba(255,255,255,1)',fillStyle: 'solid',stroke:'white'});
+  // vertices 2
+  net1.circle(400,250,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(386.9,331.8,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(349.8,399.4,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(295.2,441.3,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(232.5,450,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(172.5,424.2,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(125.6,368.2,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(100,291.8,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(100,208.2,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(125.6,131.8,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(172.5,75.8,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(232.5,50,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(295.2,58.7,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(349.8,100.6,50,{fill: 'rgba(0,0,192,1)'});
+  net1.circle(386.9,168.2,50,{fill: 'rgba(0,0,192,1)'});
+  // edges
+  net1.line(400,250,100,208.2);
+  net1.line(386.9,331.8,172.5,424.2);
+  net1.line(386.9,331.8,125.6,368.2);
+  net1.line(386.9,331.8,100,208.2);
+  net1.line(349.8,399.4,232.5,450);
+  net1.line(349.8,399.4,100,208.2);
+  net1.line(295.2,441.3,125.6,368.2);
+  net1.line(295.2,441.3,172.5,75.8);
+  net1.line(295.2,441.3,349.8,100.6);
+  net1.line(232.5,450,172.5,75.8);
+  net1.line(232.5,450,349.8,100.6);
+  net1.line(125.6,368.2,100,291.8);
+  net1.line(125.6,368.2,386.9,168.2);
+  net1.line(100,208.2,232.5,50);
+  net1.line(100,208.2,295.2,58.7);
+  net1.line(100,208.2,386.9,168.2);
+  net1.line(125.6,131.8,295.2,58.7);
+  net1.line(172.5,75.8,349.8,100.6);
+  net1.line(232.5,50,349.8,100.6);
+  net1.line(232.5,50,386.9,168.2);
+  
+  net1.line(0, 0, 500, 500, {strokeWidth: 3,stroke: 'red',roughness: 2.1});
+  net1.line(500, 0, 0, 500, {strokeWidth: 3,stroke: 'red',roughness: 2.1});
+  
+  
+});
+</script>

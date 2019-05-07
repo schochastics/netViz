@@ -35,9 +35,9 @@ In case of installation and setup issues, please contact *david.schoch@mancheste
 ## R
 
 - [igraph tutorial](https://kateto.net/networks-r-igraph)
-- [my blog](http://blog.schochastics.net)
+- [my blog](http://blog.schochastics.net): [post on graphlayouts](http://blog.schochastics.net/post/introducing-graphlayouts-with-got/)
 - [thomasp85](https://twitter.com/thomasp85) blog posts on ggraph: [layouts](https://www.data-imaginist.com/2017/ggraph-introduction-layouts/), [nodes](https://www.data-imaginist.com/2017/ggraph-introduction-nodes/), [edges](https://www.data-imaginist.com/2017/ggraph-introduction-edges/)
-- [blog post  on tidygraph](https://www.data-imaginist.com/2017/introducing-tidygraph/)
+- [blog post on tidygraph](https://www.data-imaginist.com/2017/introducing-tidygraph/)
 
 ## Colors
 
@@ -46,6 +46,8 @@ In case of installation and setup issues, please contact *david.schoch@mancheste
 - [colourpicker for R](https://cran.r-project.org/web/packages/colourpicker/index.html)
 - [subtleties of color](https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/)
 - [color choices for data viz](https://www.dataquest.io/blog/what-to-consider-when-choosing-colors-for-data-visualization/)
+- GoT palette: `got_palette <- c("#1A5878", "#C44237", "#AD8941", "#E99093", "#50594B", "#DE9763", 
+"#5D5F5D", "#E2E9E7")`
 
 ## Misc
 - [list](https://github.com/briatte/awesome-network-analysis) of network resources (not only visualizations)
