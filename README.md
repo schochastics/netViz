@@ -1,3 +1,5 @@
+**This repository is not maintained anymore. Up-to-date material can be found on [my webpage](https://www.mr.schochastics.net/material/netVizR/)**
+
 # Network Visualization Material 
 
 ## Useful links
